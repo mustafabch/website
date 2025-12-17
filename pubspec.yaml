@@ -1,0 +1,38 @@
+name: hsoub App
+description: An unofficial aggregator for Hsoub freelancer platforms.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # WebView
+  flutter_inappwebview: ^6.0.0
+  
+  # Background Execution
+  flutter_background_service: ^5.0.1
+  flutter_local_notifications: ^17.0.0
+  
+  # Storage & Permissions
+  shared_preferences: ^2.2.2
+  permission_handler: ^11.3.0
+  device_info_plus: ^10.1.0
+  
+  # Networking & Parsing
+  http: ^1.2.0
+  html: ^0.15.4
+  
+  # Icons (Optional but good)
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
