@@ -1,0 +1,218 @@
+.accordion-container {
+  max-width: 37.5rem;
+}
+
+@media (max-width: 991px) {
+  .accordion-container {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+.accordion-item {
+  background-color: var(--color-bg-secondary);
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+}
+
+.accordion-header {
+  background-color: var(--color-accent-teal);
+  color: var(--color-text-dark);
+  border: none;
+  width: 100%;
+  text-align: right;
+  cursor: pointer;
+  outline: none;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.75rem;
+}
+
+@media (max-width: 480px) {
+  .accordion-header.font-size-1-20 {
+    font-size: 1rem !important;
+  }
+}
+
+.accordion-content {
+  background-color: var(--color-text-primary);
+  overflow: hidden;
+  padding: 0 1.5rem;
+  max-height: 0;
+  transition: max-height 0.3s ease;
+}
+
+@media (max-width: 480px) {
+  .accordion-content {
+    max-height: unset;
+    height: 11.5rem;
+  }
+}
+
+.accordion-content p {
+  margin: 15px 0;
+  color: var(--color-text-dark);
+
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75rem;
+}
+
+@media (max-width: 1386px) {
+  .accordion-content p br {
+    display: none;
+  }
+}
+
+.icon {
+  transition: transform 0.3s ease;
+}
+
+.icon-1 {
+  transition: transform 0.3s ease;
+}
+
+.active .icon {
+  transform: rotate(-45deg);
+}
+
+.active .icon-1 {
+  transform: rotate(-92deg);
+}
+
+
+
+
+/* --- Web Dev Accordion Styling --- */
+
+.web-accordion-section {
+  padding: 5rem 0 3rem 0;
+  margin: 0 0 0 0;
+  border-top: 1px solid var(--color-overlay-light-20);
+  border-bottom: 1px solid var(--color-overlay-light-20);
+}
+
+
+.accordion-item-custom {
+  position: relative;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* إخفاء الـ Checkbox الافتراضي */
+.accordion-item-custom input[type="radio"] {
+  display: none;
+}
+
+.accordion-header-custom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s;
+}
+
+.acc-head-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.acc-icon-main {
+  font-size: 24px;
+}
+
+.acc-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin: 0;
+  transition: color 0.3s;
+}
+
+.acc-toggle-icon {
+  font-size: 28px;
+  color: var(--color-brand-primary);
+  font-weight: 300;
+  transition: transform 0.3s ease;
+}
+
+.accordion-content-custom {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 25px;
+  color: var(--color-text-primary);
+  font-size: 16px;
+  line-height: 1.7;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+}
+
+/* --- حالات التفعيل (عندما يكون مفتوحاً) --- */
+
+/* تغيير لون الحدود */
+.accordion-item-custom:has(input:checked) {
+  border-color: var(--color-brand-primary);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+/* إظهار المحتوى */
+.accordion-item-custom input:checked~.accordion-content-custom {
+  max-height: 180px;
+  padding-bottom: 25px;
+  padding-top: 10px;
+  opacity: 1;
+}
+
+/* تدوير أيقونة + */
+.accordion-item-custom input:checked~.accordion-header-custom .acc-toggle-icon {
+  transform: rotate(45deg);
+  color: var(--color-text-primary);
+}
+
+/* تلوين العنوان */
+.accordion-item-custom input:checked~.accordion-header-custom .acc-title {
+  color: var(--color-brand-primary);
+}
+
+
+
+.accordion-side {
+  padding-top: 3rem;
+}
+
+.side-content {
+  padding-top: 3rem;
+}
+
+
+.side-content p {
+  padding-bottom: 2rem;
+}
+
+.side-content .web-side-img {
+  max-height: 400px;
+}
+
+@media (max-width: 550px) {
+
+  .accordion-side {
+    padding-top: 2rem;
+  }
+
+  .side-content {
+    padding-top: 2rem;
+  }
+}

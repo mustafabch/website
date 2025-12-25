@@ -1,0 +1,92 @@
+/* --- 4. Work Process Section --- */
+
+/* 3. تعريف قسم رحلة المشروع (Work Process) بشكل صريح */
+.work-process-area {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  position: relative;
+  background-color: var(--color-bg-card);
+  overflow: hidden;
+}
+
+.work-process-area {
+  padding-top: 4.25rem;
+  padding-bottom: 4.25rem;
+}
+
+.process-card {
+  background: linear-gradient(145deg,
+      rgba(255, 255, 255, 0.03) 0%,
+      rgba(255, 255, 255, 0.01) 100%);
+  border: 1px solid var(--color-border-light);
+  border-radius: 1rem;
+  padding: 40px 2rem;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  z-index: 1;
+}
+
+.process-card:hover {
+  transform: translateY(-0.5rem);
+  border-color: var(--color-brand-primary);
+  box-shadow: 0 15px 2rem rgba(0, 0, 0, 0.2);
+}
+
+.process-card .icon-wrapper {
+  position: relative;
+  margin-bottom: 1.5rem;
+  height: 16rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.process-card .icon-wrapper i {
+  font-size: 3rem;
+  color: var(--color-accent-teal);
+  position: relative;
+  z-index: 2;
+  transition: transform 0.4s ease;
+}
+
+.process-card .watermark-number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 11rem;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.03);
+  line-height: 1;
+  z-index: 1;
+  font-family: sans-serif;
+  transition: all 0.5s ease;
+}
+
+.process-card:hover .icon-wrapper i {
+  transform: scale(1.1) rotate(-5deg);
+  color: var(--color-text-primary);
+}
+
+.process-card:hover .watermark-number {
+  color: rgba(106, 130, 251, 0.1);
+  transform: translate(-50%, -65%) scale(1.1);
+}
+
+.process-card .title {
+  color: var(--color-text-primary);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.process-card .text {
+  color: var(--color-text-secondary);
+  font-size: 1rem;
+  line-height: 1.7;
+  text-align: center;
+  margin-bottom: 0;
+}

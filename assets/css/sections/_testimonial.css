@@ -1,0 +1,202 @@
+.testimonial-area {
+  position: relative;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: var(--color-bg-secondary);
+}
+
+.testimonial-area {
+  background-color: var(--color-bg-secondary);
+}
+
+.testimonial-area .client-work-name {
+  color: var(--color-brand-primary);
+}
+
+.testimonial-area .client-say-slider-btns .swiper-button-next:hover,
+.testimonial-area .client-say-slider-btns .swiper-button-prev:hover {
+  background-color: var(--color-btn-primary-bg);
+}
+
+.testimonial-area .client-say-slider-btns .swiper-button-next:hover svg path,
+.testimonial-area .client-say-slider-btns .swiper-button-prev:hover svg path {
+  fill: var(--color-icon-fill-dark);
+}
+
+.testimonial-area .client-say-bg {
+  opacity: 50%;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.testimonial-area h2 {
+  text-align: center;
+  color: var(--color-text-primary);
+  font-family: 'Readex Pro', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 3.5rem;
+}
+
+.testimonial-area p {
+  color: var(--color-text-primary);
+  font-family: 'Readex Pro', sans-serif;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  text-transform: capitalize;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .testimonial-area p {
+    width: 60%;
+    margin: auto;
+  }
+
+  .testimonial-area p br {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .testimonial-area p {
+    width: 80%;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 524px) {
+  .testimonial-area p {
+    width: unset;
+    font-size: 1rem;
+  }
+}
+
+.testimonial-area h5 {
+  color: var(--color-text-primary);
+  font-family: 'Readex Pro', sans-serif;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-top: 2.5rem;
+}
+
+@media (max-width: 1024px) {
+  .testimonial-area {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .testimonial-area .client-say-home {
+    padding-bottom: 7rem;
+  }
+}
+
+.testimonial-area .client-work-name {
+  display: block;
+  color: var(--color-accent-red);
+  font-family: 'Readex Pro', sans-serif;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-top: 0.5rem;
+}
+
+.testimonial-area .client-say-slider-btns.slider-btn,
+.testimonial-area .client-say-slider-btns.slider-btn {
+  position: relative;
+  bottom: 11.25rem;
+}
+
+@media (max-width: 1200px) {
+
+  .testimonial-area .client-say-slider-btns.slider-btn,
+  .testimonial-area .client-say-slider-btns.slider-btn {
+    bottom: 24.25rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .testimonial-area .client-say-slider-btns.slider-btn {
+    bottom: -3.5rem;
+    right: 90%;
+    transform: translateX(50%);
+  }
+
+  .testimonial-area .client-say-slider-btns.slider-btn {
+    bottom: -3.5rem;
+    left: 90%;
+    transform: translateX(50%);
+  }
+}
+
+@media (max-width: 700px) {
+  .testimonial-area .client-say-slider-btns.slider-btn {
+    right: 86%;
+  }
+
+  .testimonial-area .client-say-slider-btns.slider-btn {
+    left: 86%;
+  }
+}
+
+@media (max-width: 596px) {
+  .testimonial-area .client-say-slider-btns.slider-btn {
+    right: 84%;
+  }
+
+  .testimonial-area .client-say-slider-btns.slider-btn {
+    left: 84%;
+  }
+}
+
+@media (max-width: 485px) {
+  .testimonial-area .client-say-slider-btns.slider-btn {
+    right: 78%;
+  }
+
+  .testimonial-area .client-say-slider-btns.slider-btn {
+    left: 78%;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .testimonial-area .client-say-slider-btns.slider-btn,
+  .testimonial-area .client-say-slider-btns.slider-btn {
+    display: none;
+  }
+}
+
+.testimonial-area .client-say-slider-btns .swiper-button-next,
+.testimonial-area .client-say-slider-btns .swiper-button-prev {
+  background-color: transparent;
+  border: 1px solid var(--color-text-primary);
+}
+
+.testimonial-area .client-say-slider-btns .swiper-button-next:hover,
+.testimonial-area .client-say-slider-btns .swiper-button-prev:hover {
+  background-color: var(--color-accent-red);
+  border: none;
+}
+
+.testimonial-area .client-say-slider-btns .swiper-button-next svg,
+.testimonial-area .client-say-slider-btns .swiper-button-prev svg {
+  width: 0.5rem;
+}

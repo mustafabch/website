@@ -1,0 +1,107 @@
+/* 
+  _reset.css
+  تسوية مبدئية مبسطة مبنية على modern-normalize.
+  تهدف إلى توحيد سلوك العناصر الافتراضية بين المتصفحات.
+*/
+
+/* الخطوة 1: ضبط box-sizing */
+/* هذا يجعل حساب العرض والارتفاع يشمل padding و border */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+
+/* الخطوة 3: تطبيق أنماط تسوية مبدئية على الجسم */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 
+    'Readex Pro Variable', /* الخط الافتراضي للغة العربية */
+    'Jost Variable',       /* الخط الافتراضي للغة الإنجليزية */
+    system-ui,            /* خط النظام كاحتياطي */
+    -apple-system,        /* خط نظام Apple */
+    BlinkMacSystemFont,   /* خط نظام Apple (Webkit) */
+    'Segoe UI',           /* خط ويندوز */
+    Roboto,               /* خط Android */
+    Oxygen,               /* خط KDE */
+    Ubuntu,               /* خط Ubuntu */
+    Cantarell,            /* خط GNOME */
+    sans-serif;           /* خط احتياطي */
+  line-height: inherit; /* أو المتغير المقابل */
+  color: var(--color-text-primary, #2a2d34); /* استخدام متغير CSS */
+  background-color: var(--color-bg-primary, #fff); /* استخدام متغير CSS */
+  -webkit-font-smoothing: antialiased; /* تحسين مظهر الخطوط على الشاشات */
+  -moz-osx-font-smoothing: grayscale; /* تحسين مظهر الخطوط على شاشات Mac */
+  text-rendering: optimizeLegibility; /* تحسين قراءة النص */
+  overflow-x: hidden; /* منع تمرير المحتوى أفقيًا */
+}
+
+/* الخطوة 4: تسوية مبدئية لعناصر النص */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+pre,
+ul,
+ol,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* الخطوة 5: تسوية مبدئية لعناصر القائمة */
+ul,
+ol {
+  list-style: none;
+}
+
+/* الخطوة 6: تسوية مبدئية لعناصر الجدول */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* الخطوة 7: تسوية مبدئية لعناصر النموذج */
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+/* الخطوة 8: تسوية مبدئية للصور والفيديو */
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* الخطوة 9: تسوية مبدئية للروابط */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+

@@ -1,0 +1,110 @@
+/* ------  Services highlights  ------ */
+
+
+.services-highlight {
+  position: relative;
+  padding: 4rem 1.25rem;
+  /* 12rem 1rem -> rem */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-bottom: 1px solid var(--color-border-medium);
+  overflow: hidden;
+  z-index: 100;
+}
+
+/* Shape Decoration */
+.services-highlight .grx-serv-shep-1 {
+  position: absolute;
+  bottom: 12rem;
+  /* 190px */
+  left: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* =========================================
+   2. Text Content Styling
+   ========================================= */
+.services-highlight-text {
+  position: relative;
+  z-index: 2;
+}
+
+.services-highlight .title {
+  text-align: start;
+  /* Smart alignment: Right in Arabic, Left in English */
+  margin-bottom: 1.25rem;
+}
+
+.services-highlight p {
+  color: var(--color-text-primary);
+  font-size: 1.125rem;
+  /* 18px */
+  font-weight: 400;
+  text-align: justify;
+  line-height: 1.8;
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.services-highlight p span {
+  font-weight: 700;
+  color: var(--color-accent-teal);
+}
+
+
+/* =========================================
+   7. Responsive & Media Queries
+   ========================================= */
+
+
+
+
+/* Tablet & Mobile */
+@media (max-width: 1199px) {
+  .services-highlight-item.services-highlight-item-2 {
+    margin-top: 0;
+    /* Remove stagger on smaller screens */
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .services-highlight {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: center;
+  }
+
+  .services-highlight .title {
+    text-align: center;
+  }
+
+  .services-highlight p {
+    text-align: center;
+  }
+
+  .services-highlight-text {
+    margin-bottom: 4rem;
+  }
+
+  /* Center video button */
+  .video-main {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .services-highlight p br {
+    display: none;
+  }
+
+  .services-highlight p {
+    font-size: 1rem;
+  }
+
+  .services-highlight-item {
+    margin-bottom: 1.5rem;
+  }
+}

@@ -1,0 +1,613 @@
+/* =========================================
+   تنسيق الهيدر الشفاف والمتحرك (Sticky Header)
+   ========================================= */
+
+/* الوضع الافتراضي (في أعلى الصفحة) */
+.header-main {
+  position: fixed;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: transparent !important;
+  /* شفافية كاملة */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.01);
+  /* حد خفيف جداً */
+  transition: all 0.4s ease-in-out;
+  /* حركة ناعمة عند التحول */
+  padding: 20px 0;
+  /* مسافة مريحة في البداية */
+}
+
+/* الوضع المتحرك (عند التمرير لأسفل) */
+.header-main.sticky-on {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgba(26, 29, 35, 0.95) !important;
+  backdrop-filter: blur(20px);
+  /* تأثير الزجاج الضبابي العصري */
+  padding: 10px 0;
+  z-index: 900;
+  border-bottom: 1px solid rgba(26, 29, 30, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+}
+
+
+@media (max-width: 1200px) {
+  .header-main {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+
+.menu-bar-btn {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+
+
+.header-main .header-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .header-main .header-wrapper {
+    direction: ltr;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+  }
+}
+
+.header-main .header-wrapper .menu-bar {
+  display: none;
+}
+
+@media (max-width: 1199px) {
+  .header-main .header-wrapper .menu-bar {
+    display: block;
+    width: 10%;
+    text-align: start;
+  }
+
+  .header-main .header-wrapper .menu-bar a svg {
+    transition-timing-function: linear;
+    transition-duration: 0.3s;
+  }
+
+  .header-main .header-wrapper .menu-bar a svg line {
+    fill: var(--color-neutral-light);
+  }
+
+  .header-main .header-wrapper .menu-bar a:hover svg {
+    transition-timing-function: linear;
+    transition-duration: 0.3s;
+  }
+
+  .header-main .header-wrapper .menu-bar a:hover svg line {
+    stroke: var(--color-brand-primary);
+  }
+}
+
+@media (max-width: 767px) {
+  .header-main .header-wrapper .menu-bar {
+    width: 30%;
+    text-align: left;
+  }
+}
+
+.header-main .header-wrapper .logo {
+  width: 30%;
+}
+
+.header-main .header-wrapper .logo:hover {
+  opacity: 0.8;
+  transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+@media (max-width: 767px) {
+  .header-main .header-wrapper .logo {
+    display: block;
+  }
+}
+
+.header-main .header-wrapper .main-menu {
+  width: 75%;
+  text-align: center;
+  position: relative;
+}
+
+@media (max-width: 1499px) {
+  .header-main .header-wrapper .main-menu {
+    width: 65%;
+  }
+}
+
+@media (max-width: 1199px) {
+  .header-main .header-wrapper .main-menu {
+    display: none;
+  }
+}
+
+.header-main .header-wrapper .main-menu ul li {
+  display: inline-block;
+  margin: 0 1rem;
+  align-items: center;
+  position: relative;
+}
+
+.header-main .header-wrapper .main-menu ul li:hover .submenu {
+  top: 160%;
+  visibility: visible;
+  opacity: 1;
+  transform: perspective(300px) rotateX(0deg);
+}
+
+.header-main .header-wrapper .main-menu ul li .submenu {
+  padding: 15px 0;
+  position: absolute;
+  top: 190%;
+  right: 0;
+  min-width: 280px;
+  background: var(--color-bg-secondary);
+  z-index: 9950;
+  transition: all 0.3s ease-out 0s;
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: 0 1rem 2rem rgba(3, 6, 31, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.5rem;
+  transform-origin: top;
+  transform: perspective(300px) rotateX(-18deg);
+}
+
+.header-main .header-wrapper .main-menu ul li .submenu li {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  text-align: right;
+}
+
+.header-main .header-wrapper .main-menu ul li .submenu li a {
+  color: var(--color-text-primary);
+  transition-timing-function: linear;
+  transition-duration: 0.3s;
+}
+
+.header-main .header-wrapper .main-menu ul li .submenu li a:hover {
+  color: var(--color-brand-primary);
+}
+
+@media (max-width: 555px) {
+  .header-main .header-wrapper .main-menu ul li {
+    margin: 0 1.5rem;
+  }
+}
+
+@media (max-width: 1299px) {
+  .header-main .header-wrapper .main-menu ul li {
+    margin: 0 1rem;
+  }
+}
+
+.header-main .header-wrapper .main-menu ul li a {
+  position: relative;
+  color: var(--color-text-primary);
+}
+
+.header-main .header-wrapper .main-menu ul li a:hover {
+  color: var(--color-brand-primary);
+}
+
+.header-main .header-wrapper .main-menu ul li a:hover span svg {
+  stroke: var(--color-brand-primary);
+}
+
+.header-main .header-wrapper .main-menu ul li a span {
+  margin-right: 5px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.header-main .header-wrapper .main-menu ul li a span i {
+  font-size: 1.2rem;
+  line-height: 1;
+  transition-timing-function: linear;
+  transition-duration: 0.3s;
+  color: var(--color-text-primary);
+}
+
+.header-main .header-wrapper .menu-cta-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 25%;
+  justify-content: end;
+}
+
+@media (max-width: 1199px) {
+  .header-main .header-wrapper .menu-cta-bar {
+    width: 30%;
+    justify-content: end;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-main .header-wrapper .menu-cta-bar {
+    display: none;
+  }
+}
+
+.booking-btn {
+  position: relative;
+  margin-right: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-text-primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.booking-btn i {
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+  line-height: 1;
+}
+
+.booking-btn:hover {
+  opacity: 0.8;
+}
+
+.booking-btn:hover i {
+  color: var(--color-text-dark);
+}
+
+/* Theme Toggle Button */
+.theme-toggle-btn {
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--color-text-primary);
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+  background-color: var(--overlay-light-10);
+  color: var(--color-brand-primary);
+  transform: rotate(15deg);
+}
+
+/* Icon Toggling Logic */
+/* Default (Dark Mode): Show Sun to switch to Light */
+.theme-toggle-btn .dark-icon {
+  display: none;
+}
+
+/* Moon */
+.theme-toggle-btn .light-icon {
+  display: block;
+}
+
+/* Sun */
+
+/* Light Mode: Show Moon to switch to Dark */
+[data-theme="light"] .theme-toggle-btn .dark-icon {
+  display: block;
+}
+
+[data-theme="light"] .theme-toggle-btn .light-icon {
+  display: none;
+}
+
+.header-top {
+  position: relative;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  background: var(--color-accent-teal);
+  color: var(--color-text-dark);
+}
+
+@media (max-width: 103rem) {
+  .header-top {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.header-top .header-top-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 868px) {
+  .header-top .header-top-wrapper {
+    justify-content: center;
+  }
+}
+
+.header-top .header-top-wrapper .address {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .header-top .header-top-wrapper .address {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .header-top .header-top-wrapper .address span {
+    display: block;
+  }
+
+  .header-top .header-top-wrapper .address span .address-icons {
+    display: block;
+  }
+}
+
+.header-top .header-top-wrapper .address .font-size-1-16 {
+  color: var(--color-text-dark);
+}
+
+.header-top .header-top-wrapper .address svg {
+  border-radius: 50%;
+  position: relative;
+  height: 130%;
+  fill: var(--color-accent-teal);
+}
+
+@media (max-width: 1024px) {
+  .header-top .header-top-wrapper .address {
+    display: none;
+  }
+}
+
+.header-top .header-top-wrapper .address {
+  font-weight: 500;
+}
+
+@media (max-width: 868px) {
+  .header-top .header-top-wrapper .header-top-menu {
+    display: none;
+  }
+}
+
+.header-top .header-top-wrapper .header-top-menu ul li {
+  display: block;
+  direction: rtl;
+  float: right;
+}
+
+.header-top .header-top-wrapper .header-top-menu ul li a {
+  color: var(--color-text-dark);
+  margin-left: 2.25rem;
+  margin-right: 5px;
+  position: relative;
+}
+
+.header-top .header-top-wrapper .header-top-menu ul li a:hover {
+  color: var(--color-text-primary);
+}
+
+.header-top .header-top-wrapper .header-top-menu ul li a::after {
+  content: '\eb7e';
+  position: relative;
+  font-family: 'remixicon' !important;
+  padding: 0.5rem;
+  color: var(--color-text-dark);
+  left: 0;
+  font-weight: normal;
+}
+
+.header-top .header-top-wrapper .header-top-menu ul li:last-child a {
+  margin-left: 0;
+}
+
+
+.nft-mobile-menu {
+  position: fixed;
+  width: 280px;
+  height: 100vh;
+  overflow-y: scroll;
+  top: 0;
+  left: -420px;
+  background-color: var(--color-bg-secondary);
+  padding: 0 2rem;
+  z-index: 9999;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  box-shadow: -1rem 0.5rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.nft-mobile-menu .close-menu {
+  background-color: var(--color-text-primary);
+  padding: 0.5rem 1rem;
+  border: none;
+}
+
+.nft-mobile-menu .mobile-copyright {
+  position: relative;
+  width: calc(100%-2rem);
+  display: block;
+  background-color: var(--color-bg-secondary);
+  align-items: center;
+  align-content: center;
+  z-index: -1;
+}
+
+.nft-mobile-menu nav {
+  background-color: var(--color-bg-secondary);
+  z-index: 1;
+}
+
+.nft-mobile-menu .close-menu:hover {
+  background-color: var(--color-accent-red);
+}
+
+.nft-mobile-menu .mobile-menu-logo {
+  width: auto;
+  display: block;
+  padding: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 4.5rem;
+  opacity: 0.9;
+}
+
+
+.nft-mobile-menu nav ul {
+  margin-top: 2.5rem;
+}
+
+@media (min-width: 767px) {
+  .nft-mobile-menu nav ul {
+    margin-top: 5rem;
+  }
+}
+
+.nft-mobile-menu ul li {
+  display: block;
+}
+
+.nft-mobile-menu ul li a {
+  display: block;
+  padding: 8px 8px 8px 8px;
+  border-bottom: 1px solid;
+  border-image: linear-gradient(180deg,
+      rgba(255, 255, 255, 0.2) 49.59%,
+      rgba(255, 255, 255, 0.2) 100%) 1;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  text-transform: capitalize;
+  transition-timing-function: linear;
+  transition-duration: 0.3s;
+}
+
+.nft-mobile-menu ul li a:hover {
+  color: var(--color-brand-primary);
+}
+
+.nft-mobile-menu-1 ul li a:hover {
+  color: var(--color-accent-teal);
+}
+
+.nft-mobile-menu-2 ul li a:hover {
+  color: var(--color-accent-red);
+}
+
+.nft-mobile-menu ul li.has-submenu {
+  position: relative;
+}
+
+.nft-mobile-menu ul li.has-submenu>a {
+  position: relative;
+}
+
+.nft-mobile-menu ul li.has-submenu>a::after {
+  content: "\EA4E";
+  font-family: 'remixicon' !important;
+  position: absolute;
+  top: 6px;
+  left: 0.5rem;
+  background-color: transparent;
+  width: 1.5rem;
+  height: 1.5rem;
+  text-align: center;
+  line-height: 1.4rem;
+  border-radius: 2px;
+  cursor: pointer;
+  color: var(--color-text-primary);
+  transition-timing-function: linear;
+  transition-duration: 0.3s;
+}
+
+.nft-mobile-menu ul li.has-submenu ul {
+  margin-top: 0;
+  display: none;
+}
+
+.nft-mobile-menu ul li.has-submenu ul li a {
+  padding-right: 1.5rem;
+}
+
+.nft-mobile-menu ul li.has-submenu ul li.has-submenu ul li a {
+  padding-right: 2.25rem;
+}
+
+.mobile-menu-active {
+  right: 0;
+}
+
+.nft-mobile-menu .close-menu {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border-radius: 5px;
+}
+
+.nft-mobile-menu .close-menu i {
+  font-size: 1rem;
+  font-family: 'remixicon' !important;
+  color: var(--color-text-dark);
+}
+
+.nft-mobile-menu .close-menu:hover i {
+  fill: var(--color-accent-teal);
+}
+
+.nft-mobile-menu .close-menu i:after {
+  content: '';
+  font-family: 'remixicon' !important;
+  font-size: 1rem;
+  color: var(--color-btn-accent-bg);
+}
+
+.mobile-menu-copy-left-text p {
+  font-size: 1rem;
+
+  color: var(--color-text-primary);
+  text-align: center;
+}
+
+.mobile-menu-copy-left-text p span {
+  color: var(--color-brand-primary);
+}
+
+.main-menu a.active,
+.main-menu li.active>a {
+  color: var(--color-brand-primary);
+}
+
+.main-menu li.active>a .arrow-icon {
+  transform: rotate(180deg);
+}
+
+/* Mobile */
+.nft-mobile-menu a.active {
+  color: var(--color-brand-primary);
+  font-weight: 600;
+}

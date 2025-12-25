@@ -1,0 +1,155 @@
+.project-steps-area {
+  position: relative;
+  padding-top: 8rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 3rem;
+}
+
+.project-steps-area .services-area-description {
+  text-align: justify;
+  padding-top: 3rem;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 1rem;
+}
+
+.project-steps-area.services-area .services-page-services-area-shep-1 {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.project-steps-area.services-area .step-name:hover .services-info a {
+  background-color: var(--color-brand-primary);
+}
+
+.project-steps-area.services-area .step-name:hover .services-info a svg path {
+  fill: var(--color-icon-fill-dark);
+}
+
+@media (max-width: 991px) {
+  .project-steps-area {
+    padding-top: 4.25rem;
+    padding-bottom: 4.25rem;
+  }
+}
+
+.project-steps-area h4 {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3rem;
+  padding-bottom: 0.5rem;
+  letter-spacing: -0.8px;
+  color: var(--color-text-primary);
+
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 400px) {
+  .project-steps-area h4 {
+    font-size: 2rem;
+  }
+}
+
+.project-steps-area p {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75rem;
+
+  color: var(--color-text-primary);
+}
+
+@media (max-width: 1046px) {
+  .project-steps-area p br {
+    display: none;
+  }
+}
+
+.project-steps-area .step-name {
+  margin-bottom: 3rem;
+  cursor: pointer;
+}
+
+.project-steps-area .step-name:last-child {
+  margin-bottom: 0;
+}
+
+.project-steps-area .step-name:hover h4 {
+  color: var(--color-brand-primary);
+}
+
+.project-steps-area .step-name:hover .services-info a svg {
+  rotate: 177deg;
+}
+
+.project-steps-area .step-name .services-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 2.25rem;
+  border-bottom: 1px solid rgba(216, 208, 199, 0.2);
+}
+
+@media (max-width: 1055px) {
+  .project-steps-area .step-name .services-info p {
+    width: 72%;
+  }
+}
+
+.project-steps-area .step-name .services-info a svg {
+  transition: all 0.3s ease-out;
+  rotate: 135deg;
+}
+
+.project-steps-area .services-banner {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 991px) {
+  .project-steps-area .services-banner {
+    margin-top: 4.5rem;
+  }
+}
+
+.project-steps-area .services-banner .title {
+  text-align: right;
+}
+
+@media (max-width: 991px) {
+  .project-steps-area .services-banner .title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1930px) {
+  .project-steps-area .services-banner .title h3 br {
+    display: none;
+  }
+}
+
+@media (max-width: 532px) {
+  .project-steps-area .services-banner .title .main-title h2 br {
+    display: none;
+  }
+}
+
+.project-steps-area .services-banner .pr-steps-inner {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 991px) {
+  .project-steps-area .services-banner .pr-steps-inner {
+    justify-content: center;
+  }
+}
+
+.project-steps-area .services-banner .pr-steps-inner .services-img {
+  overflow: hidden;
+}
+
+.project-steps-area .services-banner .pr-steps-inner .services-img:first-child {
+  margin-top: 1rem;
+}

@@ -1,0 +1,138 @@
+/* Section Titles */
+.title {
+  padding-bottom: 2rem;
+}
+
+.title .sub-title {
+  margin-bottom: 1rem;
+}
+
+.title .sub-title p {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--color-brand-primary);
+  text-transform: uppercase;
+}
+
+@media (max-width: 495px) {
+  .title .sub-title p {
+    font: 1rem;
+  }
+}
+
+.title .description p {
+  display: inline-block;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+  color: var(--color-text-primary);
+  max-width: 48rem;
+  text-align: justify;
+  align-items: center;
+  padding: 0;
+}
+
+.title .sub-title.sub-title-v2 p {
+  color: var(--color-accent-teal);
+}
+
+.title .main-title h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.6;
+  color: var(--color-text-primary);
+  position: relative;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .title .main-title h2 {
+    font-size: 2.25rem;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 495px) {
+  .title .main-title h2 {
+    padding-top: 1.2rem;
+    font-size: 1.4rem;
+    line-height: 1.2;
+  }
+
+  .title .main-title h2 br {
+    display: none;
+  }
+}
+
+.title .main-title h2 span {
+  position: absolute;
+  left: 30%;
+  bottom: -1rem;
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .title .main-title h2 span {
+    bottom: -0.75rem;
+  }
+}
+
+@media (max-width: 424px) {
+  .title .main-title h2 span {
+    display: none;
+  }
+}
+
+/* End Section Titles */
+
+.section-title {
+  color: var(--color-text-primary);
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.section-title h1,
+.section-title h2 {
+  color: var(--color-text-primary);
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.section-title .sub-title {
+  color: var(--color-text-primary);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.section-title .description p {
+  color: var(--color-text-primary);
+  font-size: 1rem;
+  /* تم توحيد الحجم ليكون مقروءاً */
+  font-weight: 400;
+  text-align: justify;
+  line-height: 1.8;
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.section-title .description p span {
+  font-weight: 500;
+  color: var(--color-accent-teal);
+  /* تمييز النص المهم */
+}
+
+
+.section-title.title-v2 {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}

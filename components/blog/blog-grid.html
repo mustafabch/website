@@ -1,0 +1,44 @@
+<section class="blog-grid-area section-padding pt-0">
+  <div class="container">
+
+    <div class="blog-filters text-center mb-60">
+
+      <!-- Search Input -->
+      <div class="blog-search-wrapper mb-40">
+        <div class="search-box position-relative" style="max-width: 400px; margin: 0 auto;">
+          <input type="text" id="blog-search-input" class="form-control text-center" placeholder="ابحث عن مقال..."
+            style="border-radius: 50px; padding: 12px 20px; border: 1px solid var(--border-color); background: var(--bg-light); color: var(--text-primary);">
+          <i class="ri-search-line position-absolute"
+            style="top: 50%; left: 20px; transform: translateY(-50%); color: var(--text-secondary);"></i>
+
+          <!-- Search Results Dropdown -->
+          <div id="blog-search-results" class="search-results-dropdown text-end">
+          </div>
+        </div>
+      </div>
+
+
+      <button class="blog-filter-btn filter-active" data-filter="*">الكل</button>
+      <button class="blog-filter-btn" data-filter=".cat-design">تصميم</button>
+      <button class="blog-filter-btn" data-filter=".cat-marketing">تسويق</button>
+      <button class="blog-filter-btn" data-filter=".cat-web">تطوير ويب</button>
+      <button class="blog-filter-btn" data-filter=".cat-business">ريادة أعمال</button>
+    </div>
+
+    <div id="blog-grid" class="row g-4 blog-grid-active">
+
+
+
+
+
+    </div>
+    <div class="row mt-60">
+      <div class="col-12 text-center">
+        <button id="load-more-blog" class="btn-6" style="display: none;">
+          عرض المزيد من المقالات <i class="ri-arrow-down-line ms-2"></i>
+        </button>
+      </div>
+    </div>
+
+  </div>
+</section>

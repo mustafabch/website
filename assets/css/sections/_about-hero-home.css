@@ -1,0 +1,137 @@
+.about-hero-main .about-hero-main-inner p {
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 156.5%;
+  text-transform: uppercase;
+  color: var(--color-brand-primary);
+  margin-bottom: 1rem;
+}
+
+.about-hero-main .about-hero-main-inner h2 {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110.5%;
+  color: var(--color-text-primary);
+
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 490px) {
+  .about-hero-main .about-hero-main-inner h2 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .about-hero-main .about-hero-main-inner h2 br {
+    display: none;
+  }
+}
+
+.about-hero-main .about-hero-main-inner .about-us-details {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 156.5%;
+  color: var(--color-text-primary);
+  text-transform: capitalize;
+
+  letter-spacing: unset;
+  margin-top: 2rem;
+}
+
+.about-hero-main .about-hero-main-inner .about-point-text {
+  display: flex;
+  gap: 1rem;
+  position: relative;
+  margin-top: 3rem;
+}
+
+@media (max-width: 575px) {
+  .about-hero-main .about-hero-main-inner .about-point-text {
+    align-items: center;
+  }
+}
+
+@media (max-width: 680px) {
+  .about-hero-main .about-hero-main-inner .about-point-text {
+    display: block;
+  }
+}
+
+.about-hero-main .about-hero-main-inner .about-point-text::after {
+  content: '';
+  position: absolute;
+  top: 26%;
+  height: 1px;
+  width: 100%;
+  background-color: rgba(207, 207, 207, 0.1);
+}
+
+@media (max-width: 575px) {
+  .about-hero-main .about-hero-main-inner .about-point-text::after {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero-main .about-hero-main-inner .about-point-text .about-point-icon {
+    margin-bottom: 1rem;
+  }
+}
+
+.about-hero-main .about-hero-main-inner .about-point-text .about-point-icon span {
+  width: 5.25rem;
+  height: 5.25rem;
+  background-color: var(--color-text-primary);
+  display: block;
+  text-align: center;
+  line-height: 5.25rem;
+  border-radius: 50%;
+}
+
+.about-hero-main .about-hero-main-inner .about-point-text .about-point-info h5 {
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110.5%;
+  color: var(--color-text-primary);
+}
+
+.about-hero-main .about-hero-main-inner .about-point-text .about-point-info p {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 156.5%;
+  color: var(--color-text-primary);
+
+  margin-top: 2rem;
+  letter-spacing: unset;
+  text-transform: capitalize;
+}
+
+@media (max-width: 575px) {
+  .about-hero-main .about-hero-main-inner .about-point-text .about-point-info p {
+    margin-top: 0.5rem;
+  }
+
+  .about-hero-main .about-hero-main-inner .about-point-text .about-point-info p br {
+    display: none;
+  }
+}
+
+
+
+.about-hero-main {
+  position: relative;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.about-hero-main .about-image {
+  width: 130%;
+  left: 18.75rem;
+}
+
+@media (max-width: 991px) {
+  .about-hero-main .about-image {
+    width: unset;
+  }
+}

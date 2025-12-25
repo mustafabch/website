@@ -1,0 +1,90 @@
+.error-area {
+  padding-top: 8rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 3rem;
+  position: relative;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+@media (max-width: 991px) {
+  .error-area {
+    padding-top: 2rem;
+    padding-bottom: 4.25rem;
+  }
+}
+
+.error-area .error-area-shep-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.error-area .error-area-shep-2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.error-area .error-pic {
+  max-width: 53rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.error-area .error-pic img {
+  margin: auto;
+}
+
+.error-area .error-wrapper {
+  margin-top: 0;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  .error-area .error-wrapper {
+    margin-top: 1rem;
+  }
+}
+
+.error-area .error-wrapper h4 {
+  color: var(--color-text-primary);
+  padding-top: 5rem;
+
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.5rem;
+  letter-spacing: -1.44px;
+  text-align: center;
+}
+
+@media (max-width: 62rem) {
+  .error-area .error-wrapper h4 {
+    font-size: 2.25rem;
+  }
+}
+
+.error-area .error-wrapper p {
+  color: var(--color-text-primary);
+
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+@media (max-width: 62rem) {
+  .error-area .error-wrapper p br {
+    display: none;
+  }
+}
+
+.error-area .error-wrapper .error-back-home-btn {
+  line-height: 2rem;
+  text-align: center;
+  margin-top: 2.5rem;
+}

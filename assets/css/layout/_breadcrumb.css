@@ -1,0 +1,71 @@
+/* Breadcrumb CSS Start Here */
+.breadcrumb {
+  text-align: center;
+  padding-top: 10rem;
+  padding-bottom: 2rem;
+  background-position: top center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.breadcrumb h1 {
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 75px;
+  letter-spacing: -1.95px;
+  padding-bottom: 1rem;
+  color: var(--color-text-primary);
+}
+
+@media (max-width: 575px) {
+  .breadcrumb h1 {
+    font-size: 2.8rem;
+    line-height: 3.5rem;
+  }
+}
+
+@media (max-width: 424px) {
+  .breadcrumb h1 {
+    font-size: 2.25rem;
+    line-height: 2.8rem;
+  }
+}
+
+.breadcrumb .breadcrumb-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.breadcrumb .breadcrumb-wrapper a,
+.breadcrumb .breadcrumb-wrapper span {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.54px;
+
+  color: var(--color-text-primary);
+  transition-timing-function: linear;
+  transition-duration: 0.3s;
+}
+
+.breadcrumb .breadcrumb-wrapper aspan svg,
+.breadcrumb .breadcrumb-wrapper spanspan svg {
+  width: 0.5rem !important;
+}
+
+.breadcrumb .breadcrumb-wrapper a:hover,
+.breadcrumb .breadcrumb-wrapper span:hover {
+  color: var(--color-brand-primary);
+}
+
+.breadcrumb .breadcrumb-wrapper a.current-page,
+.breadcrumb .breadcrumb-wrapper span.current-page {
+  pointer-events: none;
+}
+
+/* Breadcrumb CSS end Here */

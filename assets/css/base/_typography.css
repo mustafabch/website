@@ -1,0 +1,177 @@
+/* 
+  Typography Styles
+  تعريفات الخطوط وتطبيقاتها الأساسية
+  تم إنشاؤه: ديسمبر 2025
+  استنادًا إلى تفضيلات المستخدم: 
+  - Readex Pro Variable للغة العربية
+  - Jost للغة الإنجليزية
+  - Nunito للعناوين
+*/
+
+/* ============ 1. FONT FACE DEFINITIONS ================ */
+
+@font-face {
+  font-family: 'Readex Pro Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 160 700;
+  src: url('/assets/fonts/readex-pro.woff2') format('woff2-variations');
+  unicode-range:
+    U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891, U+0897-08E1,
+    U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF,
+    U+FE70-FE74, U+FE76-FEFC, U+102E0-102FB, U+10E60-10E7E, U+10EC2-10EC4,
+    U+10EFC-10EFF, U+1EE00-1EE03, U+1EE05-1EE1F, U+1EE21-1EE22, U+1EE24,
+    U+1EE27, U+1EE29-1EE32, U+1EE34-1EE37, U+1EE39, U+1EE3B, U+1EE42, U+1EE47,
+    U+1EE49, U+1EE4B, U+1EE4D-1EE4F, U+1EE51-1EE52, U+1EE54, U+1EE57, U+1EE59,
+    U+1EE5B, U+1EE5D, U+1EE5F, U+1EE61-1EE62, U+1EE64, U+1EE67-1EE6A,
+    U+1EE6C-1EE72, U+1EE74-1EE77, U+1EE79-1EE7C, U+1EE7E, U+1EE80-1EE89,
+    U+1EE8B-1EE9B, U+1EEA1-1EEA3, U+1EEA5-1EEA9, U+1EEAB-1EEBB, U+1EEF0-1EEF1;
+}
+
+/* Jost Font - للغة الإنجليزية */
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('../fonts/jost/jost-100.woff2') format('woff2'),
+    url('../fonts/jost/jost-200.woff2') format('woff2'),
+    url('../fonts/jost/jost-300.woff2') format('woff2'),
+    url('../fonts/jost/jost-400.woff2') format('woff2'),
+    url('../fonts/jost/jost-500.woff2') format('woff2'),
+    url('../fonts/jost/jost-600.woff2') format('woff2'),
+    url('../fonts/jost/jost-700.woff2') format('woff2'),
+    url('../fonts/jost/jost-800.woff2') format('woff2'),
+    url('../fonts/jost/jost-900.woff2') format('woff2');
+}
+
+/* Nunito Font - للعناوين */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200 900;
+  /* يغطي جميع الأوزان من المجلد ninito */
+  src: url('../fonts/ninito/nunito-200.woff2') format('woff2'),
+    url('../fonts/ninito/nunito-300.woff2') format('woff2'),
+    url('../fonts/ninito/nunito-400.woff2') format('woff2'),
+    url('../fonts/ninito/nunito-500.woff2') format('woff2'),
+    url('../fonts/ninito/nunito-600.woff2') format('woff2'),
+    url('../fonts/ninito/nunito-700.woff2') format('woff2'),
+    url('../fonts/ninito/nunito-800.woff2') format('woff2'),
+    url('../fonts/ninito/nunito-900.woff2') format('woff2');
+}
+
+/* ============ 2. GLOBAL BODY STYLE (Updated) ================ */
+
+body {
+  /* نحتفظ بـ Readex Pro كـ fallback إذا لم يتم تحديد خط آخر */
+  /* سيتم تحديد الخطوط الأخرى باستخدام فئات CSS */
+  font-family: 'Readex Pro Variable', system-ui, -apple-system, sans-serif;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-primary);
+}
+
+
+/* ============ 3. LANGUAGE-SPECIFIC FONT CLASSES ================ */
+
+/* لتطبيق خط Jost على النصوص الإنجليزية */
+.lang-en,
+.english-text,
+.text-en {
+  font-family: 'Jost', 'Readex Pro Variable', system-ui, -apple-system, sans-serif;
+}
+
+/* لتطبيق خط Nunito على العناوين (أو أي نص تريده أن يستخدم Nunito) */
+.heading,
+.h-nunito,
+.font-nunito {
+  font-family: 'Nunito', 'Readex Pro Variable', system-ui, -apple-system, sans-serif;
+}
+
+/* لتطبيق Readex Pro على النصوص العربية (اختياري، إذا كنت ترغب في تحديد ذلك صراحةً) */
+.lang-ar,
+.arabic-text,
+.text-ar {
+  font-family: 'Readex Pro Variable', system-ui, -apple-system, sans-serif;
+  direction: rtl;
+  /* تأكد من توجيه النص العربي */
+}
+
+
+/* ============ 4. REMOVING RemixIcon Definition (Moved to utilities/_icons-fix.css) ================ */
+
+/* تعريف RemixIcon تم نقله إلى css/utilities/_icons-fix.css */
+
+
+/* ============ 5. (Optional) Default Heading Font Assignment ================ */
+
+/* كخيار ثاني، يمكنك تعيين Nunito مباشرة على عناصر العناوين */
+/* h1, h2, h3, h4, h5, h6 {
+  font-family: 'Nunito', 'Readex Pro Variable', system-ui, -apple-system, sans-serif;
+} */
+
+
+/* Global Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* 3. تنسيقات النصوص المساعدة (من global.css سابقاً) */
+.text-accent {
+  color: var(--color-accent-teal);
+  position: relative;
+  display: inline-block;
+}
+
+/* الخط تحت الكلمة المميزة */
+.text-accent::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  /* تم التعديل ليكون أقرب */
+  left: 0;
+  width: 100%;
+  height: 15px;
+  background-image: url('/assets/images/static/text-shep-1.png');
+  /* تأكد من المسار */
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+
+.text-muted {
+  color: #b2bfcb !important;
+}
+
+.text-brand-1 {
+  color: var(--color-accent-teal) !important;
+}
+
+.text-brand-2 {
+  color: var(--color-accent-red) !important;
+}
+
+.justify-text {
+  text-align: justify !important;
+}
+
+.txt-center {
+  text-align: center !important;
+}
+
+.txt-right {
+  text-align: right !important;
+}
+
+.txt-left {
+  text-align: left !important;
+}

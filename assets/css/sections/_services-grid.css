@@ -1,0 +1,290 @@
+/* =========================
+        Services Grid 
+============================*/
+
+.services-grid-section {
+  padding-top: 2rem;
+  padding-bottom: 8rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: relative;
+}
+
+.services-grid-section .about-page-digital-marketing-area-shep-1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+
+
+.services-grid-section .services-list-wrapper .services-list-inner:hover {
+  background-color: var(--color-bg-secondary);
+}
+
+@media (max-width: 991px) {
+  .services-grid-section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.services-grid-section .services-list-wrapper {
+  margin-top: 4.25rem;
+}
+
+.services-grid-section .services-list-wrapper .services-list-inner {
+  display: grid;
+  border: 1px solid var(--overlay-light-20);
+  position: relative;
+  border-radius: 0.75rem;
+  background-color: var(--overlay-dark-20);
+  padding: 1rem 2rem;
+  min-height: -webkit-fill-available;
+  margin: 0.5rem;
+  transition: 0.5s ease;
+  cursor: pointer;
+  align-items: center;
+  justify-content: right;
+  box-shadow: 0px 0px 45px 0px rgba(0, 0, 0, 0.15);
+}
+
+.services-grid-section .services-list-wrapper .services-list-inner .services-grid-icon {
+  width: 3rem;
+  transition: 0.5s ease;
+  position: absolute;
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+  max-width: max-content;
+  min-height: max-content;
+}
+
+@media (max-width: 1968px) {
+  .services-grid-section .services-list-wrapper .services-list-inner {
+    padding: 0.5rem;
+    text-align: right;
+  }
+}
+
+.services-grid-section .services-list-wrapper .services-list-inner:hover {
+  background-color: transparent;
+  border: 1px solid var(--color-accent-teal);
+}
+
+.services-grid-section .services-list-wrapper .services-list-inner:hover .services-grid-icon {
+  transform: translateY(-0.5rem);
+}
+
+.services-grid-section .services-list-wrapper .services-list-inner h5 {
+  color: var(--color-text-primary);
+  font-style: normal;
+  font-weight: 500;
+  line-height: inherit;
+  text-align: right;
+  margin-right: 3rem;
+  text-transform: capitalize;
+}
+
+@media (max-width: 1024px) {
+  .services-grid-section .services-list-wrapper .services-list-inner h5 {
+    font-size: 1rem;
+  }
+}
+
+.services-grid-section .services-list-wrapper .services-list-inner p {
+  color: var(--color-text-primary);
+
+  font-style: normal;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 1968px) {
+  .services-grid-section .services-list-wrapper .services-list-inner p br {
+    display: none;
+  }
+}
+
+.services-grid-section .services-list-wrapper .services-list-inner .why-us-btn {
+  margin-top: 38px;
+}
+
+.services-grid-section .services-list-wrapper .services-list-inner .why-us-btn a {
+  display: flex;
+  align-items: center;
+  gap: 29px;
+}
+
+
+.services-grid-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.services-grid-title h2 {
+  color: var(--color-text-primary);
+  font-weight: 700;
+  text-align: right;
+}
+
+@media (max-width: 550px) {
+
+  .services-grid-title {
+    display: block;
+  }
+
+
+  .services-grid-title h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .services-grid-title .btn-1::before {
+    padding: 0%;
+    width: 100%;
+  }
+
+  .services-grid-title .btn-1 {
+    align-items: center;
+    margin: 2rem 2rem 1rem 1rem;
+    padding: 1rem;
+    width: 80%;
+  }
+
+}
+
+
+
+/* Graphic Design Services Area Start */
+
+.services-grid {
+  padding-top: 5rem;
+  padding-bottom: 4.25rem;
+  position: relative;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-bottom: 10 5 solid var(--color-neutral-light);
+}
+
+@media (max-width: 991px) {
+  .services-grid {
+    padding-top: 4.25rem;
+    padding-bottom: 4.25rem;
+  }
+}
+
+.services-grid .offer-area-1-shep-1 {
+  position: absolute;
+  top: 71%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 767px) {
+  .services-grid {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.services-grid .services-grid-wrapper {
+  padding-top: 2.75rem;
+}
+
+@media (max-width: 767px) {
+  .services-grid .services-grid-wrapper {
+    padding-top: 2.75rem;
+  }
+}
+
+.services-grid .services-grid-wrapper .card-inner {
+  margin-bottom: 1.5rem;
+  padding-right: 2.25rem;
+  padding-left: 2.25rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-radius: 0.5rem;
+  height: -webkit-fill-available;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 2.75rem 0 rgba(0, 0, 0, 0.15);
+  background-color: var(--color-bg-card);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+@media (max-width: 991px) {
+  .services-grid .services-grid-wrapper .card-inner:last-child {
+    margin-top: 1rem;
+  }
+}
+
+.services-grid .services-grid-wrapper .card-inner:hover {
+  border: 1px solid var(--color-brand-primary);
+}
+
+.services-grid .services-grid-wrapper .card-inner:hover .services-card a i {
+  rotate: 360deg;
+}
+
+.services-grid .services-grid-wrapper .card-inner p {
+  font-style: normal;
+  font-weight: 500;
+  line-height: inherit;
+  color: var(--color-text-primary);
+
+  margin-top: 2rem;
+}
+
+@media (max-width: 1099px) {
+  .services-grid .services-grid-wrapper .card-inner p br {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-grid .services-grid-wrapper .card-inner p {
+    font-size: 1.25rem;
+  }
+}
+
+.services-grid .services-grid-wrapper .card-inner .services-card {
+  margin-bottom: 2rem;
+  display: flex;
+  font-weight: 700;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.services-grid .services-grid-wrapper .card-inner .services-card h3 {
+  color: var(--color-text-primary);
+  font-weight: 700;
+}
+
+.services-grid .services-grid-wrapper .card-inner .services-card span {
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  color: var(--color-text-primary);
+}
+
+.services-grid .services-grid-wrapper .card-inner .services-card a i {
+  font-size: 3.5rem;
+  color: var(--color-brand-primary);
+  rotate: 340deg;
+  transition: 0.3s ease;
+}
+
+.services-grid .services-grid-wrapper .card-inner .services-card a svg {
+  transition: all 0.3s ease-out;
+}
+
+.services-grid .services-grid-wrapper .card-inner:hover .services-card a svg {
+  transform: rotate(-30deg);
+}

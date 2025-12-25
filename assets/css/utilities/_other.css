@@ -1,0 +1,65 @@
+/* تنسيق رسائل الخطأ والنجاح */
+.success-msg {
+  color: #25d366;
+}
+
+.error-msg {
+  color: #ff4a3b;
+}
+
+
+
+.hidden-object {
+  display: none;
+}
+
+.accenttred {
+  color: var(--color-accent-red) !important;
+}
+
+.text-brand-accent-1 {
+  color: var(--color-accent-teal) !important;
+}
+
+
+/******************************* theme css **********************************/
+.container {
+  max-width: 1290px;
+}
+
+.transition-1 {
+  transition-timing-function: linear;
+  transition-duration: 0.3s;
+}
+
+.tab-animation {
+  animation: tabinganimation 2s ease-out;
+}
+
+
+.text-muted {
+  color: rgb(178 191 203) !important;
+
+}
+
+
+/* تحسين النصوص */
+.text-accent {
+  color: var(--color-accent-teal);
+  position: relative;
+  display: inline-block;
+}
+
+
+/* القائمة المتداخلة (Nested List) */
+.nested-list {
+  padding-right: 1rem;
+  margin-top: 0.5rem;
+  list-style: disc;
+  /* استخدام نقاط للقائمة الداخلية */
+}
+
+.nested-list li {
+  color: var(--color-text-muted);
+  font-size: 1rem;
+}

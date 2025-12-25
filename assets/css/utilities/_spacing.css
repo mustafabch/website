@@ -1,0 +1,354 @@
+
+/***************** spacing padding *************/
+.ptb-140 {
+  padding: 8.75rem 0;
+}
+
+@media (max-width: 767.98px) {
+  .ptb-140 {
+    padding: 5rem 0;
+  }
+}
+
+.pt-140 {
+  padding-top: 8.75rem;
+}
+
+@media (max-width: 767.98px) {
+  .pt-140 {
+    padding-top: 5rem;
+  }
+}
+
+.pb-140 {
+  padding-bottom: 8.75rem;
+}
+
+@media (max-width: 767.98px) {
+  .pb-140 {
+    padding-bottom: 5rem;
+  }
+}
+
+.pt-120 {
+  padding-top: 11rem;
+}
+
+@media (max-width: 767.98px) {
+  .pt-120 {
+    padding-top: 4.25rem;
+  }
+}
+
+.ptb-120 {
+  padding: 11rem 0;
+}
+
+@media (max-width: 767.98px) {
+  .ptb-120 {
+    padding: 4.25rem 0;
+  }
+}
+.pb-50 {
+  padding-bottom: 8rem;
+}
+
+.pt-100 {
+  padding-top: 16rem;
+}
+
+@media (max-width: 767.98px) {
+  .pt-100 {
+    padding-top: 5rem;
+  }
+}
+
+.ptb-60 {
+  padding: 3.5rem 0;
+}
+
+.pt-20 {
+  padding-top: 1rem;
+}
+
+.pb-20 {
+  padding-bottom: 1rem;
+}
+
+.pt-40 {
+  padding-top: 2.5rem;
+}
+
+.pt-30 {
+  padding-top: 2rem;
+}
+
+.pt-32 {
+  padding-top: 2rem;
+}
+
+.pb-30 {
+  padding-bottom: 2rem;
+}
+
+.pb-32 {
+  padding-bottom: 2rem;
+}
+
+.pb-40 {
+  padding-bottom: 2.5rem;
+}
+
+.pb-100 {
+  padding-bottom: 16rem;
+}
+
+@media (max-width: 767.98px) {
+  .pb-100 {
+    padding-bottom: 4.25rem;
+  }
+}
+
+.pb-140 {
+  padding-bottom: 8.75rem;
+}
+
+@media (max-width: 767.98px) {
+  .pb-140 {
+    padding-bottom: 16rem;
+  }
+}
+
+.py-20 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.px-20 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-32 {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.py-32 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.px-40 {
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+}
+
+.py-40 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+/*********************** spacing margin ***********************/
+.mt-10 {
+  margin-top: 0.5rem;
+}
+
+.mt-20 {
+  margin-top: 1rem;
+}
+
+.mt-30 {
+  margin-top: 2rem;
+}
+
+.mt-32 {
+  margin-top: 2rem;
+}
+
+.mt-40 {
+  margin-top: 2.5rem;
+}
+
+.mt-48 {
+  margin-top: 3rem;
+}
+
+.mt-50 {
+  margin-top: 3rem;
+}
+
+
+.mt-55 {
+  margin-top: 3.5rem;
+}
+
+
+.mt-60 {
+  margin-top: 3.5rem;
+}
+
+.mt-70 {
+  margin-top: 4.25rem;
+}
+
+.mt-80 {
+  margin-top: 4.5rem;
+}
+
+.mt-110 {
+  margin-top: 10.5rem;
+}
+
+.mb-10 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-20 {
+  margin-bottom: 1rem;
+}
+
+.mb-30 {
+  margin-bottom: 2rem;
+}
+
+.mb-32 {
+  margin-bottom: 2rem;
+}
+
+.mb-40 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-50 {
+  margin-bottom: 3rem;
+}
+
+.mb-60 {
+  margin-bottom: 3.5rem;
+}
+
+.mb-70 {
+  margin-bottom: 4.25rem;
+}
+
+.mb-100 {
+  margin-bottom: 16rem;
+}
+
+.mx-32 {
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.mx-40 {
+  margin-right: 2.5rem;
+  margin-left: 2.5rem;
+}
+
+.my-32 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.my-40 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.mt-120 {
+  margin-top: 11rem;
+}
+
+@media (max-width: 767.98px) {
+  .mt-120 {
+    margin-top: 4.25rem;
+  }
+}
+
+
+
+/* Offset Fix for Grid System */
+/* Note: Bootstrap 5 uses ms-auto / me-auto or offset-xl-1 classes.
+   Only use this if strictly necessary for custom grid logic. */
+.offset-xl-1 {
+  margin-left: 8.33333333%;
+  margin-right: 0;
+}
+
+/* Tablet & Mobile */
+@media (max-width: 1199px) {
+  .offset-xl-1 {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+
+
+
+.cta-final-section {
+  padding: 6rem 0 6rem 0;
+}
+
+
+.about-cta-section {
+  padding: 6rem 0 6rem 0;
+}
+
+.project-hero,
+.service-hero-section,
+.services-hero,
+.hero-main {
+  padding-top: 250px !important;
+}
+
+.about-hero,
+.portfolio-hero-area {
+  padding-top: 180px !important;
+}
+
+.team-section {
+  padding-top: 60px !important;
+  padding-bottom: 80px !important;
+}
+
+.project-story {
+  padding-top: 3rem !important;
+}
+
+.why-choose-us-modern {
+  padding-bottom: 8rem !important;
+}
+
+
+
+.portfolio-hero-area {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.portfolio-grid-area {
+  padding-bottom: 5rem;
+}
+
+
+@media (max-width: 991px) {
+  .portfolio-hero-area {
+    padding-bottom: 2.5rem;
+  }
+
+  .portfolio-grid-area {
+    padding-bottom: 3.5rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+

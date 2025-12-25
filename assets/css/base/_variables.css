@@ -1,0 +1,403 @@
+/* ============ 2. GLOBAL STYLES ================ */
+
+:root {
+   /* ---------------------------------------------
+     1. COLOR SYSTEM - BRAND
+     --------------------------------------------- */
+   --color-brand-primary: #6a82fb;
+   /* --brand-primary */
+   --color-brand-secondary: #4a5bbd;
+   /* --brand-secondary */
+
+   --color-accent-teal: #48d1cc;
+   /* --brand-accent-1 */
+   --color-accent-red: #ff6b6b;
+   /* --brand-accent-2 */
+   --color-accent-orange: #f59f00;
+   /* --brand-accent-3 */
+
+   --color-brand-light: #ccdeff;
+   /* --brand-light */
+   --color-brand-dark: #1a1d23;
+   /* --brand-dark */
+
+   /* ---------------------------------------------
+     2. NEUTRAL & BACKGROUNDS
+     --------------------------------------------- */
+   /* Neutrals (Adaptive) */
+   --color-neutral-light: #ccdeff;
+   /* --neutral-light */
+   --color-neutral-dark: #1a1d23;
+   /* --neutral-dark */
+
+   /* Backgrounds */
+   --color-bg-primary: #2a2d34;
+   /* --bg-primary */
+   --color-bg-secondary: #1a1d23;
+   /* --bg-secondary */
+   --color-bg-section: rgba(42, 45, 52, 0.5);
+   /* --bg-section */
+   --color-bg-card: rgba(20, 21, 22, 0.1);
+   /* --bg-card */
+   --color-bg-muted: #ccdeff;
+   /* --bg-muted */
+   --color-bg-light: #ccdeff;
+   /* --bg-light */
+
+   --color-bg-accent-1: var(--color-brand-secondary);
+   /* --bg-accent-1 */
+   --color-bg-surface: var(--color-brand-primary);
+   /* --bg-surface */
+
+   /* ---------------------------------------------
+     3. TEXT PALETTE
+     --------------------------------------------- */
+   --color-text-primary: #ccdeff;
+   /* --text-primary */
+   --color-text-secondary: rgba(204, 222, 255, 0.8);
+   /* --text-secondary */
+   --color-text-dark: #2a2d34;
+   /* --text-dark */
+   --color-text-muted: rgb(178 191 203);
+   /* --text-muted */
+   --color-text-link: hsl(230, 95%, 70%);
+   /* --text-link */
+
+   /* ---------------------------------------------
+     4. BORDERS & DIVIDERS
+     --------------------------------------------- */
+   --color-border-light: rgba(204, 222, 255, 0.1);
+   /* --border-light */
+   --color-border-medium: rgba(204, 222, 255, 0.2);
+   /* --border-medium */
+   --color-border-primary: rgba(106, 130, 251, 0.3);
+   /* --border-primary */
+   --color-border-dark: rgba(42, 45, 52, 0.3);
+   /* --border-dark */
+   --color-border-accent: rgba(72, 209, 204, 0.9);
+   /* --border-accent-2 */
+
+   /* ---------------------------------------------
+     5. ELEVATION & SHADOWS
+     --------------------------------------------- */
+   --shadow-sm: 0 0 15px rgba(0, 0, 0, 0.1);
+   --shadow-md: 0 0 2rem rgba(0, 0, 0, 0.15);
+   --shadow-lg: 0 0 45px rgba(0, 0, 0, 0.2);
+
+   /* ---------------------------------------------
+     6. INTERACTIVE & COMPONENTS
+     --------------------------------------------- */
+   /* Buttons */
+   --color-btn-primary-bg: var(--color-brand-primary);
+   /* --btn-primary-bg */
+   --color-btn-primary-hover: var(--color-brand-secondary);
+   /* --btn-primary-hover */
+   --color-btn-primary-text: var(--color-neutral-dark);
+   /* --btn-primary-text */
+
+   --color-btn-secondary-bg: var(--color-brand-secondary);
+   /* --btn-secondary-bg */
+   --color-btn-secondary-hover: var(--color-neutral-light);
+   /* --btn-secondary-hover */
+   --color-btn-secondary-text: var(--color-neutral-light);
+   /* --btn-secondary-text */
+
+   --color-btn-accent-bg: var(--color-accent-red);
+   /* --btn-accent-bg */
+   --color-btn-accent-hover: rgba(189, 8, 28, 0.9);
+   /* --btn-accent-hover */
+   --color-btn-accent-text: #ccdeff;
+   /* --btn-accent-text */
+
+   /* Icons */
+   --color-icon-fill-dark: var(--color-bg-primary);
+   /* --icon-fill-dark */
+   --color-icon-fill-light: var(--color-bg-muted);
+   /* --icon-fill-light */
+
+   /* Hovers */
+   --color-hover-primary: var(--color-brand-primary);
+   /* --hover-primary */
+   --color-hover-secondary: var(--color-brand-secondary);
+   /* --hover-secondary */
+   --color-hover-accent: var(--color-accent-red);
+   /* --hover-accent */
+   --color-hover-overlay: rgba(106, 130, 251, 0.1);
+   /* --hover-overlay */
+
+   /* ---------------------------------------------
+     7. OVERLAYS (Opacity Scales)
+     --------------------------------------------- */
+   --color-overlay-light-05: rgba(204, 222, 255, 0.05);
+   --color-overlay-light-10: rgba(204, 222, 255, 0.1);
+   --color-overlay-light-20: rgba(204, 222, 255, 0.2);
+   --color-overlay-light-30: rgba(204, 222, 255, 0.3);
+   --color-overlay-light-50: rgba(204, 222, 255, 0.5);
+   --color-overlay-light-70: rgba(204, 222, 255, 0.7);
+   --color-overlay-light-90: rgba(204, 222, 255, 0.9);
+
+   --color-overlay-dark-05: rgba(42, 45, 52, 0.05);
+   --color-overlay-dark-10: rgba(42, 45, 52, 0.1);
+   --color-overlay-dark-20: rgba(42, 45, 52, 0.2);
+   --color-overlay-dark-30: rgba(42, 45, 52, 0.3);
+   --color-overlay-dark-50: rgba(42, 45, 52, 0.5);
+   --color-overlay-dark-60: rgba(42, 45, 52, 0.6);
+   --color-overlay-dark-70: rgba(42, 45, 52, 0.7);
+   --color-overlay-dark-80: rgba(42, 45, 52, 0.8);
+   --color-overlay-dark-90: rgba(42, 45, 52, 0.9);
+
+   /* ---------------------------------------------
+     8. GRADIENTS & EFFECTS
+     --------------------------------------------- */
+   --gradient-brand-secondary: linear-gradient(-45deg, var(--color-accent-teal), transparent);
+   /* --gradient-brand-secondary */
+   --gradient-hero: linear-gradient(-180deg, var(--color-brand-primary) 10%, var(--color-brand-secondary) 80%);
+   /* --gradient-hero */
+   --gradient-accent: linear-gradient(-180deg, var(--color-accent-red) 10%, var(--color-accent-red) 80%);
+   /* --gradient-accent */
+   --gradient-overlay-subtle: linear-gradient(-45deg, rgba(106, 130, 251, 0.2), transparent);
+   /* --gradient-overlay-subtle */
+   --gradient-logo: linear-gradient(-45deg, var(--color-accent-teal), var(--color-brand-secondary));
+   /* --gradient-logo */
+
+   --color-effect-highlight: rgba(204, 255, 0, 0.45);
+   /* --effect-highlight */
+   --color-glow-primary: rgba(106, 130, 251, 0.3);
+   /* --glow-primary */
+   --color-glow-turquoise: rgba(72, 209, 204, 0.3);
+   /* --glow-turquoise */
+   --color-glow-red: rgba(255, 107, 107, 0.3);
+   /* --glow-red */
+
+   /* ---------------------------------------------
+     9. FORMS
+     --------------------------------------------- */
+   --color-input-bg: transparent;
+   /* --input-bg */
+   --color-input-border: var(--color-border-light);
+   /* --input-border */
+   --color-input-focus: var(--color-brand-primary);
+   /* --input-focus */
+   --color-input-text: var(--color-neutral-light);
+   /* --input-text */
+   --color-input-placeholder: rgba(204, 222, 255, 0.6);
+   /* --input-placeholder */
+
+   /* ---------------------------------------------
+     10. STATUS
+     --------------------------------------------- */
+   --color-status-success: var(--color-accent-teal);
+   /* --status-success */
+   --color-status-error: var(--color-accent-red);
+   /* --status-error */
+   --color-status-warning: var(--color-accent-red);
+   /* --status-warning */
+   --color-status-info: var(--color-brand-primary);
+   /* --status-info */
+
+   /* ---------------------------------------------
+     11. TYPOGRAPHY & LAYOUT
+     --------------------------------------------- */
+   /* Typography */
+   --font-family-sans: 'Jost', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+   /* --font-sans */
+   --font-size-base: 16px;
+   /* --base-font-size */
+   --line-height-base: 1.5;
+   /* --line-height-default */
+   --font-weight-regular: 400;
+   /* --fw-regular */
+   --font-weight-medium: 500;
+   /* --fw-medium */
+   --font-weight-bold: 700;
+   /* --fw-bold */
+
+   /* Radius */
+   --radius-sm: 4px;
+   --radius-md: 8px;
+   --radius-lg: 12px;
+
+   /* Breakpoints */
+   --bp-sm: 576px;
+   --bp-md: 768px;
+   --bp-lg: 992px;
+   --bp-xl: 1200px;
+
+   /* Z-Index */
+   --z-default: 0;
+   --z-dropdown: 1000;
+   --z-sticky: 1100;
+   --z-modal: 1200;
+   --z-tooltip: 1300;
+
+   /* Motion */
+   --duration-fast: 150ms;
+   --duration-base: 300ms;
+   --easing-standard: cubic-bezier(.4, 0, .2, 1);
+
+   /* =========================================
+     LEGACY SUPPORT (Aliases for Backward Compatibility)
+     ========================================= */
+   --brand-primary: var(--color-brand-primary);
+   --brand-secondary: var(--color-brand-secondary);
+   --brand-accent-1: var(--color-accent-teal);
+   --brand-accent-2: var(--color-accent-red);
+   --brand-accent-3: var(--color-accent-orange);
+   --brand-light: var(--color-brand-light);
+   --brand-dark: var(--color-brand-dark);
+
+   --neutral-light: var(--color-neutral-light);
+   --neutral-dark: var(--color-neutral-dark);
+
+   --bg-primary: var(--color-bg-primary);
+   --bg-secondary: var(--color-bg-secondary);
+   --bg-section: var(--color-bg-section);
+   --bg-card: var(--color-bg-card);
+   --bg-muted: var(--color-bg-muted);
+   --bg-light: var(--color-bg-light);
+   --bg-accent-1: var(--color-bg-accent-1);
+   --bg-surface: var(--color-bg-surface);
+
+   --text-primary: var(--color-text-primary);
+   --text-secondary: var(--color-text-secondary);
+   --text-dark: var(--color-text-dark);
+   --text-muted: var(--color-text-muted);
+   --text-link: var(--color-text-link);
+
+   --border-light: var(--color-border-light);
+   --border-medium: var(--color-border-medium);
+   --border-primary: var(--color-border-primary);
+   --border-dark: var(--color-border-dark);
+   --border-accent-2: var(--color-border-accent);
+
+   --btn-primary-bg: var(--color-btn-primary-bg);
+   --btn-primary-hover: var(--color-btn-primary-hover);
+   --btn-primary-text: var(--color-btn-primary-text);
+   --btn-secondary-bg: var(--color-btn-secondary-bg);
+   --btn-secondary-hover: var(--color-btn-secondary-hover);
+   --btn-secondary-text: var(--color-btn-secondary-text);
+   --btn-accent-bg: var(--color-btn-accent-bg);
+   --btn-accent-hover: var(--color-btn-accent-hover);
+   --btn-accent-text: var(--color-btn-accent-text);
+
+   --icon-fill-dark: var(--color-icon-fill-dark);
+   --icon-fill-light: var(--color-icon-fill-light);
+
+   --hover-primary: var(--color-hover-primary);
+   --hover-secondary: var(--color-hover-secondary);
+   --hover-accent: var(--color-hover-accent);
+   --hover-overlay: var(--color-hover-overlay);
+
+   --overlay-light-05: var(--color-overlay-light-05);
+   --overlay-light-10: var(--color-overlay-light-10);
+   --overlay-light-20: var(--color-overlay-light-20);
+   --overlay-light-30: var(--color-overlay-light-30);
+   --overlay-light-50: var(--color-overlay-light-50);
+   --overlay-light-70: var(--color-overlay-light-70);
+   --overlay-light-90: var(--color-overlay-light-90);
+
+   --overlay-dark-05: var(--color-overlay-dark-05);
+   --overlay-dark-10: var(--color-overlay-dark-10);
+   --overlay-dark-20: var(--color-overlay-dark-20);
+   --overlay-dark-30: var(--color-overlay-dark-30);
+   --overlay-dark-50: var(--color-overlay-dark-50);
+   --overlay-dark-60: var(--color-overlay-dark-60);
+   --overlay-dark-70: var(--color-overlay-dark-70);
+   --overlay-dark-80: var(--color-overlay-dark-80);
+   --overlay-dark-90: var(--color-overlay-dark-90);
+
+   --effect-highlight: var(--color-effect-highlight);
+   --glow-primary: var(--color-glow-primary);
+   --glow-turquoise: var(--color-glow-turquoise);
+   --glow-red: var(--color-glow-red);
+
+   --input-bg: var(--color-input-bg);
+   --input-border: var(--color-input-border);
+   --input-focus: var(--color-input-focus);
+   --input-text: var(--color-input-text);
+   --input-placeholder: var(--color-input-placeholder);
+
+   --status-success: var(--color-status-success);
+   --status-error: var(--color-status-error);
+   --status-warning: var(--color-status-warning);
+   --status-info: var(--color-status-info);
+
+   --font-sans: var(--font-family-sans);
+   --base-font-size: var(--font-size-base);
+   --line-height-default: var(--line-height-base);
+   --fw-regular: var(--font-weight-regular);
+   --fw-medium: var(--font-weight-medium);
+   --fw-bold: var(--font-weight-bold);
+
+   /* Already existing aliases from previous version */
+   --color-bg: var(--color-bg-primary);
+   --color-text: var(--color-text-primary);
+   --color-bg-muted: var(--color-bg-muted);
+   --color-text-muted: var(--color-text-muted);
+}
+
+/* =========================================
+   LIGHT THEME OVERRIDES
+   ========================================= */
+[data-theme="light"] {
+   /* Backgrounds */
+   --color-bg-primary: #ffffff;
+   /* --bg-primary */
+   --color-bg-secondary: #f8f9fa;
+   /* --bg-secondary */
+   --color-bg-section: #f0f2f5;
+   /* --bg-section */
+   --color-bg-card: #ffffff;
+   /* --bg-card */
+   --color-bg-muted: #e9ecef;
+   /* --bg-muted */
+   --color-bg-light: #ffffff;
+   /* --bg-light */
+
+   /* Text */
+   --color-text-primary: #2a2d34;
+   /* --text-primary */
+   --color-text-secondary: rgba(42, 45, 52, 0.8);
+   /* --text-secondary */
+   --color-text-muted: #6c757d;
+   /* --text-muted */
+   --color-text-link: var(--color-brand-primary);
+   /* --text-link */
+
+   /* Borders */
+   --color-border-light: rgba(0, 0, 0, 0.08);
+   /* --border-light */
+   --color-border-medium: rgba(0, 0, 0, 0.15);
+   /* --border-medium */
+   --color-border-primary: rgba(106, 130, 251, 0.3);
+   /* --border-primary */
+   --color-border-dark: rgba(0, 0, 0, 0.1);
+   /* --border-dark */
+
+   /* Shadows */
+   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+   --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+   --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.1);
+
+   /* Inputs */
+   --color-input-bg: #ffffff;
+   /* --input-bg */
+   --color-input-border: #ced4da;
+   /* --input-border */
+   --color-input-text: #2a2d34;
+   /* --input-text */
+   --color-input-placeholder: #adb5bd;
+   /* --input-placeholder */
+
+   /* Neutrals (Inverted meaning logic retained) */
+   --color-neutral-light: #2a2d34;
+   /* --neutral-light */
+   --color-neutral-dark: #ffffff;
+   /* --neutral-dark */
+
+   /* Icons */
+   --color-icon-fill-dark: #ffffff;
+   /* --icon-fill-dark */
+   --color-icon-fill-light: var(--color-bg-muted);
+   /* --icon-fill-light */
+}

@@ -1,0 +1,166 @@
+/* --- General Inputs --- */
+input,
+textarea,
+select {
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border-light);
+  color: var(--color-text-primary);
+  border-radius: 0.25rem;
+  padding: 1rem 1.25rem;
+  width: 100%;
+  outline: none;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--color-brand-primary);
+  box-shadow: 0 0 0 2px rgba(106, 130, 251, 0.1);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-text-muted);
+  opacity: 0.7;
+}
+
+/* --- Contact Form Specifics --- */
+.form-wrapper {
+  margin-top: 2rem;
+}
+
+.form-wrapper textarea {
+  height: 150px;
+  resize: none;
+}
+
+/* --- Footer Subscribe Input (Specific Override) --- */
+.footer-subscribe form input {
+  background: var(--color-bg-light);
+  color: var(--color-text-dark);
+  border: none;
+}
+
+.footer-subscribe form input::placeholder {
+  color: var(--color-text-dark);
+}
+
+
+
+
+/* --- تحسينات صفحة تواصل معنا --- */
+
+/* تنسيق حقول الإدخال */
+.form-wrapper input,
+.form-wrapper textarea {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--color-text-primary);
+  border-radius: 10px;
+  padding: 15px 20px;
+  transition: all 0.3s ease;
+}
+
+.form-wrapper input:focus,
+.form-wrapper textarea:focus {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--color-accent-red);
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 210, 180, 0.2);
+}
+
+.form-wrapper textarea {
+  height: 150px;
+  resize: none;
+}
+
+/* تنسيقات التحقق من النموذج */
+.form-control {
+  background-color: var(--color-overlay-light-20) !important;
+  color: var(--color-text-primary) !important;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  background-color: var(--color-overlay-dark-30) !important;
+  border: 1px solid var(--color-brand-primary) !important;
+}
+
+/* حالة النجاح (Valid) */
+.form-control.is-valid {
+  border: 1px solid #198754 !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73L.6 5.03 0 5.61l2.3 2.3 5.7-5.7L7.4 1.6 2.3 6.73z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: left calc(0.375em + 0.1875rem) center;
+  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+/* حالة الخطأ (Invalid) */
+.form-control.is-invalid {
+  border: 1px solid #dc3545 !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: left calc(0.375em + 0.1875rem) center;
+  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+/* --- Search Results Dropdown --- */
+.search-results-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--color-bg-surface);
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  z-index: 1000;
+  max-height: 250px;
+  overflow-y: auto;
+  border: 1px solid var(--color-border-primary);
+  margin-top: 5px;
+}
+
+.search-results-dropdown a {
+  display: block;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  text-decoration: none;
+  color: var(--color-text-primary);
+  border-bottom: 1px solid var(--color-border-light);
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+.search-results-dropdown a:last-child {
+  border-bottom: none;
+  border-radius: 0 0 10px 10px;
+}
+
+.search-results-dropdown a:hover {
+  background: var(--color-bg-secondary);
+  color: var(--color-brand-primary);
+  padding-right: 1.5rem;
+  /* Slide effect for RTL */
+}
+
+/* RTL adjustment if needed, assuming automatic dir flipping or specific class */
+[dir="ltr"] .search-results-dropdown a:hover {
+  padding-left: 1.5rem;
+  padding-right: 1.25rem;
+}
+
+/* Scrollbar styling for dropdown */
+.search-results-dropdown::-webkit-scrollbar {
+  width: 6px;
+}
+
+.search-results-dropdown::-webkit-scrollbar-thumb {
+  background: var(--color-border-primary);
+  border-radius: 3px;
+}

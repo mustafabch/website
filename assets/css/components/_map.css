@@ -1,0 +1,15 @@
+/* تنسيق الخريطة الداكنة */
+.map-container {
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    filter: grayscale(100%) invert(92%) contrast(83%);
+    /* هذا السطر السحري يحول الخريطة للوضع الليلي */
+    transition: all 0.3s ease;
+}
+
+.map-container:hover {
+    filter: grayscale(0%) invert(0%);
+    /* تلوين الخريطة عند الهوفر */
+    border-color: var(--color-accent-red);
+}

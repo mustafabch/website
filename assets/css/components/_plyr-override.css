@@ -1,0 +1,45 @@
+/* ========================
+   Plyr Override Styles
+   ======================== */
+
+:root {
+    --plyr-color-main: var(--color-brand-primary);
+    --plyr-video-control-color: #fff;
+    --plyr-video-control-background-hover: var(--color-brand-primary);
+    --plyr-menu-background: rgba(255, 255, 255, 0.95);
+    --plyr-menu-color: var(--color-text-dark);
+    --plyr-tooltip-background: #fff;
+    --plyr-tooltip-color: var(--color-text-dark);
+    --plyr-font-family: 'Readex Pro', sans-serif;
+}
+
+.plyr--full-ui input[type=range] {
+    color: var(--color-brand-primary);
+}
+
+.plyr__control--overlaid {
+    background: var(--color-accent-teal);
+    color: var(--color-text-primary);
+}
+
+.plyr__control--overlaid:hover {
+    background: var(--color-brand-primary);
+}
+
+.plyr--video .plyr__controls {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+}
+
+.plyr__menu__container {
+    background: var(--color-bg-light);
+    color: var(--color-text-dark);
+}
+
+/* Custom Play Button Glow */
+.plyr__control--overlaid {
+    box-shadow: 0 0 20px rgba(106, 130, 251, 0.5);
+}
+
+.html5-video-player a {
+    font-family: 'Readex Pro Variable' !important;
+}

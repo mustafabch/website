@@ -1,0 +1,198 @@
+/* --- About Page Enhancements --- */
+
+/* Hero Badge */
+.floating-badge {
+  position: absolute;
+  bottom: 30px;
+  right: -30px;
+  /* يخرج قليلاً عن الصورة */
+  background: #fff;
+  padding: 15px 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  gap: 15px;
+  z-index: 2;
+}
+
+.floating-badge .icon {
+  font-size: 30px;
+  color: var(--color-brand-primary);
+}
+
+.floating-badge .text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.floating-badge .count {
+  font-size: 20px;
+  font-weight: 800;
+  color: #000;
+}
+
+.floating-badge span:last-child {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Vision Cards */
+
+.vision-mission-area {
+  padding: 3rem 0 3rem 0;
+}
+
+/* تحسين التجاوب */
+@media (max-width: 991px) {
+  .floating-badge {
+    right: 0;
+    bottom: -20px;
+  }
+
+  .founder-section {
+    text-align: center;
+  }
+
+  .founder-quote {
+    text-align: right;
+  }
+}
+
+
+
+
+.why-choose-us-area {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: relative;
+}
+
+.why-choose-us-area.about-page .about-page-digital-marketing-area-shep-1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.why-choose-us-area.about-page .why-us-wrapper .why-us-inner {
+  background-color: transparent;
+}
+
+.why-choose-us-area.about-page .why-us-wrapper .why-us-inner:hover {
+  background-color: var(--color-bg-secondary);
+}
+
+@media (max-width: 991px) {
+  .why-choose-us-area {
+    padding-top: 4.25rem;
+    padding-bottom: 4.25rem;
+  }
+}
+
+.why-choose-us-area .why-us-wrapper {
+  margin-top: 4.25rem;
+}
+
+.why-choose-us-area .why-us-wrapper .why-us-inner {
+  border: 1px solid var(--color-bg-card);
+  border-radius: 0.75rem;
+  background-color: var(--color-bg-secondary);
+  padding: 3rem 40px;
+  margin: 0.5rem;
+  transition: 0.5s ease;
+  cursor: pointer;
+  box-shadow: 0px 0px 45px 0px rgba(0, 0, 0, 0.15);
+  height: -webkit-fill-available;
+}
+
+.why-choose-us-area .why-us-wrapper .why-us-inner .why-us-icon {
+  transition: 0.5s ease;
+  display: inline-block;
+  max-width: max-content;
+}
+
+@media (max-width: 1968px) {
+  .why-choose-us-area .why-us-wrapper .why-us-inner {
+    padding: 3rem 1rem;
+  }
+}
+
+.why-choose-us-area .why-us-wrapper .why-us-inner:hover {
+  background-color: transparent;
+  border: 1px solid var(--color-accent-teal);
+}
+
+.why-choose-us-area .why-us-wrapper .why-us-inner:hover .why-us-icon {
+  transform: translateY(-1rem);
+}
+
+.why-choose-us-area .why-us-wrapper .why-us-inner:hover .why-us-btn a span svg {
+  width: 100%;
+}
+
+.why-choose-us-area .why-us-wrapper .why-us-inner h5 {
+  color: var(--color-text-primary);
+
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .why-choose-us-area .why-us-wrapper .why-us-inner h5 {
+    font-size: 1.4rem;
+  }
+}
+
+.why-choose-us-area .why-us-wrapper .why-us-inner p {
+  color: var(--color-text-primary);
+
+  font-style: normal;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-top: 1rem;
+  text-align: justify;
+}
+
+@media (max-width: 1968px) {
+  .why-choose-us-area .why-us-wrapper .why-us-inner p br {
+    display: none;
+  }
+}
+
+.why-choose-us-area .why-us-wrapper .why-us-inner .why-us-btn {
+  margin-top: 38px;
+}
+
+.why-choose-us-area .why-us-wrapper .why-us-inner .why-us-btn a {
+  display: flex;
+  align-items: center;
+  gap: 29px;
+}
+
+.why-choose-us-area .why-us-wrapper .why-us-inner .why-us-btn a span {
+  color: var(--color-brand-primary);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.why-choose-us-area .why-us-wrapper .why-us-inner .why-us-btn a span svg {
+  width: 0;
+  transition: 0.5s ease;
+}
+
+/* --- Modern Why Choose Us Styles --- */
+
+.why-choose-us-modern {
+  position: relative;
+  overflow: hidden;
+  background-color: #0b1626;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}

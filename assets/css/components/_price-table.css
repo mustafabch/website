@@ -1,0 +1,120 @@
+/* ==============
+   Pricing Section
+   ============== */
+.pricing-section {
+  position: relative;
+  padding: 8rem 1rem;
+}
+
+/* Decorative elements */
+.pricing-section__deco {
+  position: absolute;
+}
+
+.pricing-section__deco--top-left {
+  top: -240px;
+  left: 0;
+}
+
+.pricing-section__deco--bottom-right {
+  bottom: 0;
+  right: 0;
+}
+
+.pricing-section--single {
+  padding-top: 2.5rem;
+}
+
+/* Cards wrapper */
+.pricing-cards {
+  align-items: center;
+  margin-top: 4.25rem;
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .pricing-section {
+    padding: 4.25rem 1rem;
+  }
+
+  .pricing-section--single {
+    padding-top: 1rem;
+  }
+
+  .pricing-cards {
+    margin-top: 2.5rem;
+  }
+
+  .pricing-card {
+    margin-top: 2rem;
+  }
+
+  .pricing-card__badge {
+    top: 0.25rem;
+    left: 0.25rem;
+  }
+}
+
+@media (max-width: 532px) {
+  .pricing-card__title br {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .pricing-card__badge {
+    top: 0.25rem;
+    left: 0.25rem;
+  }
+}
+
+.pricing-card__cta .btn-4 {
+  color: var(--color-text-dark);
+  padding: 1rem 2rem;
+  font-weight: 500;
+  line-height: 125%;
+  text-align: center;
+  background: var(--color-accent-teal);
+  border-radius: 0.25rem;
+  transition: 0.3s ease-out;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  width: -webkit-fill-available;
+}
+
+.pricing-card__cta .btn-4 span {
+  margin-right: 0.5rem;
+}
+
+.pricing-card__cta .btn-4::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 0;
+  width: 100%;
+  background: var(--color-accent-teal);
+  transition: 0.4s ease-out;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.pricing-card__cta .btn-4:hover {
+  color: var(--color-brand-secondary);
+  background: var(--color-btn-secondary-bg);
+}
+
+.pricing-card__cta .btn-4:hover::before {
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+  background: var(--color-bg-light);
+}
+
+.pricing-card__cta .btn-4:hover svg path {
+  fill: var(--color-icon-fill-dark);
+}

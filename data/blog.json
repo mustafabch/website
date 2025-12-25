@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "title": "5 أخطاء قاتلة في حملاتك الإعلانية",
+    "date": "15 ديسمبر 2025",
+    "category": "Marketing",
+    "read-time": "5 دقائق",
+    "image": "https://placehold.co/600x400/2a2d34/6a82fb?text=Marketing+Ads",
+    "excerpt": "تعرف على الأخطاء الشائعة التي قد تهدر ميزانيتك الإعلانية وكيفية تجنبها لتحقيق أفضل عائد.",
+    "link": "/ar/blog/blog-details.html"
+  },
+  {
+    "id": 2,
+    "title": "اتجاهات التصميم الجرافيكي لعام 2026",
+    "date": "10 ديسمبر 2025",
+    "category": "Design",
+    "featured": true,
+    "read-time": "5 دقائق",
+    "image": "https://placehold.co/600x400/6a82fb/ffffff?text=Design+Trends",
+    "excerpt": "نظرة مستقبلية على الألوان والأنماط التي ستسيطر على عالم التصميم في العام القادم.",
+    "link": "/ar/blog/blog-details.html"
+  },
+  {
+    "id": 3,
+    "title": "كيف تبني موقعاً سريعاً ومتجاوباً؟",
+    "date": "05 ديسمبر 2025",
+    "category": "Web",
+    "read-time": "5 دقائق",
+    "image": "https://placehold.co/600x400/fc5a5a/ffffff?text=Web+Development",
+    "excerpt": "دليل شامل لتحسين أداء موقعك وضمان تجربة مستخدم ممتازة على جميع الأجهزة.",
+    "link": "/ar/blog/blog-details.html"
+  },
+  {
+    "id": 4,
+    "title": "أسرار ريادة الأعمال الناجحة",
+    "date": "01 ديسمبر 2025",
+    "category": "Business",
+       "featured": true,
+    "read-time": "5 دقائق",
+    "image": "https://placehold.co/600x400/48d1cc/ffffff?text=Business",
+    "excerpt": "نصائح عملية لرواد الأعمال الجدد لبناء شركات ناشئة قوية ومستدامة.",
+    "link": "/ar/blog/blog-details.html"
+  },
+  {
+    "id": 5,
+    "title": "مستقبل الذكاء الاصطناعي في التسويق",
+    "date": "28 نوفمبر 2025",
+    "category": "Marketing",
+    "featured": false,
+    "read-time": "5 دقائق",
+    "image": "https://placehold.co/600x400/f59f00/ffffff?text=AI+Marketing",
+    "excerpt": "كيف سيغير الذكاء الاصطناعي طريقة وصول العلامات التجارية لجمهورها المستهدف؟",
+    "link": "/ar/blog/blog-details.html"
+  },
+  {
+    "id": 6,
+    "title": "أفضل أدوات التصميم للمحترفين",
+    "date": "20 نوفمبر 2025",
+    "category": "Design",
+    "featured": false,
+    "read-time": "5 دقائق",
+    "image": "https://placehold.co/600x400/2a2d34/ffffff?text=Design+Tools",
+    "excerpt": "قائمة بأهم الأدوات والبرامج التي يحتاجها كل مصمم جرافيك لزيادة إنتاجيته.",
+    "link": "/ar/blog/blog-details.html"
+  },
+  {
+    "id": 7,
+    "title": "أفضل أدوات التصميم للمحترفين",
+    "date": "30 نوفمبر 2025",
+    "category": "Design",
+    "featured": false,
+    "read-time": "5 دقائق",
+    "image": "https://placehold.co/600x400/f59f00/ffffff?text=Design+Tools",
+    "excerpt": "قائمة بأهم الأدوات والبرامج التي يحتاجها كل مصمم جرافيك لزيادة إنتاجيته.",
+    "link": "/ar/blog/blog-details.html"
+  }
+] 

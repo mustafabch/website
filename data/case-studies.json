@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "title": "زيادة المبيعات بنسبة 200% لمتجر إلكتروني",
+    "category": "E-commerce Growth",
+    "client": "متجر الأزياء العصرية",
+    "image": "https://placehold.co/600x800/2a2d34/ffffff?text=Case+Study+1",
+    "excerpt": "كيف قمنا بتحسين تجربة المستخدم وإعادة استهداف العملاء لتحقيق نمو قياسي.",
+    "link": "/ar/case-studies/case-study.html"
+  },
+  {
+    "id": 2,
+    "title": "إطلاق علامة تجارية في قطاع القهوة",
+    "category": "Branding Strategy",
+    "client": "قهوة الصباح",
+    "image": "https://placehold.co/600x800/6a82fb/ffffff?text=Case+Study+2",
+    "excerpt": "بناء هوية بصرية قوية واستراتيجية تواصل اجتماعي لعلامة تجارية ناشئة.",
+    "link": "/ar/case-studies/case-study.html"
+  },
+  {
+    "id": 3,
+    "title": "تصدر نتائج البحث لموقع طبي",
+    "category": "SEO Optimization",
+    "client": "مستشفى الشفاء",
+    "image": "https://placehold.co/600x800/fc5a5a/ffffff?text=Case+Study+3",
+    "excerpt": "تحسين البنية التقنية والمحتوى للوصول إلى الصفحة الأولى في كلمات مفتاحية صعبة.",
+    "link": "/ar/case-studies/case-study.html"
+  },
+  {
+    "id": 4,
+    "title": "تطوير تطبيق توصيل طلبات",
+    "category": "Mobile App UX",
+    "client": "سريع للتوصيل",
+    "image": "https://placehold.co/600x800/48d1cc/ffffff?text=Case+Study+4",
+    "excerpt": "تصميم رحلة مستخدم سلسة وتقليل وقت الطلب بنسبة 40%.",
+    "link": "/ar/case-studies/case-study.html"
+  },
+   {
+    "id": 5,
+    "title": "إطلاق علامة تجارية في قطاع القهوة",
+    "category": "Branding Strategy",
+    "client": "قهوة الصباح",
+    "image": "https://placehold.co/600x800/6a82fb/ffffff?text=Case+Study+2",
+    "excerpt": "بناء هوية بصرية قوية واستراتيجية تواصل اجتماعي لعلامة تجارية ناشئة.",
+    "link": "/ar/case-studies/case-study.html"
+  },
+  {
+    "id": 6,
+    "title": "زيادة المبيعات بنسبة 200% لمتجر إلكتروني",
+    "category": "E-commerce Growth",
+    "client": "متجر الأزياء العصرية",
+    "image": "https://placehold.co/600x800/2a2d34/ffffff?text=Case+Study+1",
+    "excerpt": "كيف قمنا بتحسين تجربة المستخدم وإعادة استهداف العملاء لتحقيق نمو قياسي.",
+    "link": "/ar/case-studies/case-study.html"
+  },
+    {
+    "id": 7,
+    "title": "تطوير تطبيق توصيل طلبات",
+    "category": "Mobile App UX",
+    "client": "سريع للتوصيل",
+    "image": "https://placehold.co/600x800/48d1cc/ffffff?text=Case+Study+4",
+    "excerpt": "تصميم رحلة مستخدم سلسة وتقليل وقت الطلب بنسبة 40%.",
+    "link": "/ar/case-studies/case-study.html"
+  }
+]

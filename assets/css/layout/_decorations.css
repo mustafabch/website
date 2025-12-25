@@ -1,0 +1,130 @@
+/* assets/css/layout/_decorations.css */
+
+/* الخلفية الموحدة */
+.unified-bg {
+  background:
+    linear-gradient(to bottom, rgba(5, 5, 5, 0.8), rgba(20, 20, 20, 0.6)),
+    url('/assets/images/backgrounds/hero_services_bg_3.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* تأثير الضباب (Blur) */
+.blur-1 {
+  position: absolute;
+  fill: var(--color-effect-highlight);
+  filter: blur(10.5rem);
+  z-index: -1;
+  width: 24rem;
+  height: 24rem;
+  opacity: 0.6;
+}
+
+.bg-dark-2 {
+  background-color: var(--color-bg-card, #1e1e1e);
+}
+
+
+
+
+
+.serv-hero-shep-1,
+.hero-main-shep-1,
+.hero-area-3-shep-1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: var(--color-effect-highlight);
+  filter: blur(10.5rem);
+  width: 24rem;
+  height: 24.9375rem;
+  z-index: -1;
+}
+
+.serv-hero-shep-2,
+.hero-main-shep-2,
+.hero-area-shep-2 {
+  position: absolute;
+  bottom: 25%;
+  fill: var(--color-effect-highlight);
+  filter: blur(10.5rem);
+  width: 24rem;
+  height: 24.9375rem;
+  right: 0;
+  z-index: -1;
+}
+
+.serv-hero-shep-1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: var(--color-effect-highlight);
+  filter: blur(10.5rem);
+  width: 24rem;
+  height: 24.9375rem;
+  z-index: 1;
+}
+
+.serv-hero-shep-2 {
+  position: absolute;
+  bottom: 25%;
+  fill: var(--color-effect-highlight);
+  filter: blur(10.5rem);
+  width: 24rem;
+  height: 24.9375rem;
+  right: 0;
+  z-index: 1;
+}
+
+.why-choose-us-modern-shep-1,
+.about-hero-shep-1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: var(--color-effect-highlight);
+  filter: blur(10.5rem);
+  width: 24rem;
+  height: 24.9375rem;
+  z-index: 0;
+}
+
+.why-choose-us-modern-shep-2 {
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+  fill: var(--color-effect-highlight);
+  filter: blur(10.5rem);
+  width: 24rem;
+  height: 24.9375rem;
+  z-index: 0;
+}
+
+.about-hero-shep-2 {
+  position: absolute;
+  bottom: 50%;
+  right: 0;
+  fill: var(--color-effect-highlight);
+  filter: blur(10.5rem);
+  width: 24rem;
+  height: 24.9375rem;
+  z-index: -1;
+}
+
+.about-hero-shep-3 {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  fill: var(--color-effect-highlight);
+  filter: blur(10.5rem);
+  width: 24rem;
+  height: 24.9375rem;
+  z-index: -1;
+}
+
+
+.faq-home-shep1 {
+  position: relative;
+
+}

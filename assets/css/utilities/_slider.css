@@ -1,0 +1,247 @@
+/******************************* swiper improvements **********************************/
+/* تحسين أزرار Swiper العامة */
+.swiper-button-next,
+.swiper-button-prev {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.swiper-button-next svg,
+.swiper-button-prev svg {
+  display: block;
+  margin: auto;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.swiper-button-next svg,
+.swiper-button-prev svg {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+/* تحسين Swiper في RTL */
+.swiper-slide {
+  text-align: right;
+}
+
+.testimonial-inner {
+  direction: rtl;
+}
+
+/* ===== 13. دعم RTL للـ Swiper Buttons ===== */
+.swiper-button-next {
+  left: 10rem !important;
+  right: auto !important;
+}
+
+.swiper-button-prev {
+  right: 10rem !important;
+  left: auto !important;
+}
+
+@media (max-width: 480px) {
+  .swiper-button-next {
+    left: 10rem !important;
+    right: auto !important;
+    bottom: 3rem !important;
+  }
+
+  .swiper-button-prev {
+    right: 10rem !important;
+    left: auto !important;
+  }
+}
+
+@media (max-width: 550px) {
+  .swiper-button-next {
+    left: 1.5rem !important;
+    right: auto !important;
+  }
+
+  .swiper-button-prev {
+    right: 1.5rem !important;
+    left: auto !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper-button-next {
+    left: 3rem !important;
+    right: auto !important;
+  }
+
+  .swiper-button-prev {
+    right: 3rem !important;
+    left: auto !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper-button-next {
+    left: 3rem !important;
+    right: auto !important;
+  }
+
+  .swiper-button-prev {
+    right: 3rem !important;
+    left: auto !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .swiper-button-next {
+    left: 3rem !important;
+    right: auto !important;
+  }
+
+  .swiper-button-prev {
+    right: 3rem !important;
+    left: auto !important;
+  }
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  transform: scaleX(-1);
+}
+
+/* ===== 16. الأزرار الملاحية للـ Swiper - تحسين التصميم ===== */
+.swiper-button-next,
+.swiper-button-prev {
+  width: 3rem;
+  height: 3rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(0.5rem);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.swiper-button-next svg,
+.swiper-button-prev svg {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--text-link);
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: var(--text-muted);
+}
+
+
+.swiper-button-prev-c,
+.swiper-button-next-c {
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.swiper-button-prev-c:hover,
+.swiper-button-next-c:hover {
+  background: var(--brand-accent-1);
+  border-color: var(--brand-accent-1);
+  color: var(--text-primary);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--bg-accent-1);
+}
+
+
+
+/* استجابة الموبايل */
+@media (max-width: 768px) {
+  .cta-main .font-size-1-50 {
+    font-size: 32px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-lg {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+
+
+
+/* تنسيق حاوية زر الحجز */
+.booking-wrapper {
+  display: inline-flex;
+  align-items: center;
+}
+
+
+
+
+
+
+/* Slider */
+.slider-btn .swiper-button-next,
+.slider-btn .swiper-button-prev {
+  background: var(--brand-accent-1);
+  backdrop-filter: blur(0.5rem);
+  transition: all 0.3s ease;
+}
+
+.slider-btn .swiper-button-next:hover,
+.slider-btn .swiper-button-prev:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+/* ===== 17. تحسين للشاشات الصغيرة جداً ===== */
+@media (max-width: 480px) {
+
+  .gslide-iframe,
+  .ginner-container iframe {
+    min-height: 12.5rem;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .slider-btn .swiper-button-next,
+  .slider-btn .swiper-button-prev {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .slider-btn .swiper-button-next svg,
+  .slider-btn .swiper-button-prev svg {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+}

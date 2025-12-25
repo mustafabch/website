@@ -1,0 +1,81 @@
+/* =====================================
+   Graphixy Master Stylesheet (Cleaned)
+===================================== */
+
+/* 1. BASE */
+@import url('base/_variables.css');
+@import url('base/_reset.css');
+@import url('base/_typography.css');
+/* يحتوي الآن على كل تنسيقات النصوص */
+@import url('base/_sections-title.css');
+@import url('base/_utilities.css');
+@import url('base/_navigations.css');
+
+/* 2. LAYOUT */
+@import url('layout/_grid.css');
+/* يحتوي الآن على container */
+@import url('layout/_header.css');
+@import url('layout/_footer.css');
+@import url('layout/_breadcrumb.css');
+@import url('layout/_decorations.css');
+@import url('layout/_mega-menu.css');
+/* يحتوي على الخلفيات */
+
+/* 3. COMPONENTS */
+@import url('components/_buttons.css');
+@import url('components/_cards.css');
+@import url('components/_forms.css');
+@import url('components/_accordion.css');
+@import url('components/_counter.css');
+@import url('components/_floating.css');
+@import url('components/_loader.css');
+@import url('components/_badge.css');
+@import url('components/_popup-video.css');
+@import url('components/_price-table.css');
+@import url('components/_reveal.css');
+@import url('components/_case-study-card.css');
+@import url('components/_social-buttons.css');
+@import url('components/_social-buttons.css');
+@import url('components/_lang-selector.css');
+@import url('components/_plyr-override.css');
+
+/* 4. SECTIONS */
+@import url('sections/_hero.css');
+@import url('sections/_about-hero-home.css');
+@import url('sections/_partners-logo.css');
+@import url('sections/_statistics.css');
+@import url('sections/_work-process.css');
+@import url('sections/_portfolio.css');
+@import url('sections/_testimonial.css');
+@import url('sections/_cta.css');
+@import url('sections/_marquee.css');
+@import url('sections/_values.css');
+@import url('sections/_team.css');
+@import url('sections/_services-grid.css');
+@import url('sections/_service-hightlights.css');
+@import url('sections/_webdev-services.css');
+@import url('sections/_video-services.css');
+@import url('sections/_about-founder.css');
+@import url('sections/_whois-area.css');
+@import url('sections/_project-steps.css');
+@import url('sections/_bento-grid.css');
+@import url('sections/_include.css');
+
+/* 5. PAGES */
+@import url('pages/_home.css');
+@import url('pages/_about.css');
+@import url('pages/_services.css');
+@import url('pages/_portfolio.css');
+@import url('pages/_blog.css');
+@import url('pages/_contact.css');
+@import url('pages/_case-study.css');
+@import url('pages/_faq.css');
+@import url('pages/_error.css');
+@import url('pages/_legal.css');
+
+/* 6. UTILITIES (Final Overrides) */
+@import url('utilities/_slider.css');
+@import url('utilities/_glightbox-fix.css');
+@import url('utilities/_icons.css');
+@import url('utilities/_animations.css');
+@import url('utilities/_spacing.css');

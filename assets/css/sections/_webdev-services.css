@@ -1,0 +1,113 @@
+/* Start Web Dev Services Area */
+.webdevs-area {
+  position: relative;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (max-width: 991px) {
+  .webdevs-area {
+    padding-top: 4.25rem;
+    padding-bottom: 4.25rem;
+  }
+}
+
+.webdevs-area .title {
+  text-align: right;
+}
+
+@media (max-width: 991px) {
+  .webdevs-area .title {
+    text-align: center;
+  }
+}
+
+.webdevs-area .title p {
+  color: var(--color-text-primary);
+}
+
+.webdevs-area .title h3 span {
+  color: var(--color-brand-primary);
+  position: unset;
+}
+
+@media (max-width: 998px) {
+  .webdevs-area .title h3 br {
+    display: none;
+  }
+}
+
+.webdevs-area .webdevs-banner {
+  overflow: hidden;
+  width: 100%;
+  max-width: 550px;
+}
+
+@media (max-width: 991px) {
+  .webdevs-area .webdevs-banner img {
+    margin: auto;
+  }
+}
+
+.webdevs-area .webdevs-inner {
+  margin-top: 2.5rem;
+}
+
+.webdevs-area .webdevs-inner .webdevs-item {
+  display: flex;
+  align-items: start;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 991px) {
+  .webdevs-area .webdevs-inner .webdevs-item {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 452px) {
+  .webdevs-area .webdevs-inner .webdevs-item {
+    gap: 1rem;
+  }
+}
+
+.webdevs-area .webdevs-inner .webdevs-item h5 {
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--color-text-primary);
+}
+
+.webdevs-area .webdevs-inner .webdevs-item p {
+  color: var(--color-text-primary);
+  margin-top: 0.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  text-align: justify;
+}
+
+@media (max-width: 500px) {
+  .webdevs-area .webdevs-inner .webdevs-item p br {
+    display: none;
+  }
+}
+
+.webdevs-area .webdevs-inner .webdevs-item span {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: var(--color-accent-red);
+  display: block;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 3.5rem;
+}
+
+webdevs-text {
+  flex: 1;
+}
+
+/* End Web Dev Services Area */

@@ -1,0 +1,139 @@
+/******************************** components *******************************/
+
+
+/* =========================================
+   FIXED FLOATING BUTTONS & TOOLTIPS
+   ========================================= */
+
+/* 1. الحاوية الرئيسية (تضمن ترتيب الأزرار فوق بعضها) */
+.floating-buttons-container {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  /* مكانها يمين الشاشة */
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  /* ترتيب عمودي */
+  gap: 15px;
+  /* مسافة بين زر الواتساب وزر الصعود */
+  align-items: center;
+  pointer-events: none;
+  /* يسمح بالنقر خلال الحاوية في المساحات الفارغة */
+}
+
+/* 2. الستايل المشترك للأزرار */
+.floating-btn {
+  position: relative;
+  /* ضروري لتموضع التلميح (Tooltip) */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  pointer-events: auto;
+  /* إعادة تفعيل النقر للأزرار */
+}
+
+/* تكبير بسيط عند تمرير الماوس */
+.floating-btn:hover {
+  transform: translateY(-3px);
+}
+
+/* 3. تنسيق التلميح (Tooltip) */
+.btn-label {
+  position: absolute;
+  right: 60px;
+  /* يظهر يسار الزر (لأننا في وضع RTL) */
+  top: 50%;
+  transform: translateY(-50%) translateX(-10px);
+  background-color: var(--color-bg-light);
+  /* لون داكن */
+  color: var(--color-text-dark);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 700;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* سهم صغير للتلميح (اختياري) */
+.btn-label::after {
+  content: '';
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent var(--color-bg-light);
+}
+
+/* إظهار التلميح عند الهوفر */
+.floating-btn:hover .btn-label {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-50%) translateX(0);
+}
+
+/* =========================================
+   SCROLL TO TOP BUTTON STYLES
+   ========================================= */
+
+#progress {
+  /* الحالة الافتراضية: مخفي */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  background-color: var(--color-bg-muted);
+  /* خلفية احتياطية */
+  color: var(--color-text-primary);
+  transition: all 0.3s ease;
+}
+
+/* كلاس التفعيل (يضاف بواسطة JS) */
+#progress.active-progress {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* الدائرة الداخلية (لعمل تأثير الحلقة Progress Ring) */
+#progress-value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 6px);
+  /* ترك مسافة للحدود الملونة */
+  width: calc(100% - 6px);
+  background-color: var(--color-brand-secondary);
+  /* لون قلب الزر */
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+/* =========================================
+   WHATSAPP BUTTON STYLES
+   ========================================= */
+
+.whatsapp-btn {
+  background-color: #25D366;
+  color: var(--color-text-primary);
+  border: 2px solid #fff;
+  /* يظهر دائماً */
+  opacity: 1;
+  visibility: visible;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebc57;
+}

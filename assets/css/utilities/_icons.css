@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "RemixIcon";
+  src: url("/assets/fonts/remixicon.woff2") format("woff2");
+}
+
+
+/* ========================================================================
+  icon helpers
+   ======================================================================== */
+
+/* عكس السهم الأيمن عندما يكون الاتجاه RTL */
+[dir='rtl'] .fa-angle-right::before {
+  content: '\f105';
+  /* رمز السهم الأيسر */
+}
+
+[dir='rtl'] .fa-angle-left::before {
+  content: '\f104';
+  /* رمز السهم الأيسر */
+}
+
+
+/* 1. إجبار المتصفح على استخدام خط Remix للأيقونات */
+[class^='ri-'],
+[class*=' ri-'] {
+  font-family: 'remixicon' !important;
+  /* هام جداً !important */
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align: middle;
+  /* ضبط المحاذاة */
+  font-weight: normal !important;
+}
+
+/* 2. إصلاح أيقونات داخل الروابط والأزرار */
+a i[class^='ri-'],
+button i[class^='ri-'],
+span i[class^='ri-'] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}

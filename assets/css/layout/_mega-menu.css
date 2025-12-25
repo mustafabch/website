@@ -1,0 +1,205 @@
+/* ==========================================================================
+   Graphixy Mega Dropdown
+   ========================================================================== */
+
+/* Pseudo-element to bridge the gap between nav item and dropdown */
+.main-menu ul li.has-mega-menu::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    /* Covers the margin-top gap */
+    background: transparent;
+    z-index: 10;
+    display: none;
+    /* Only show on hover of the LI */
+}
+
+.main-menu ul li.has-mega-menu:hover::after {
+    display: block;
+}
+
+/* Parent LI must be static to allow dropdown to position relative to Header Wrapper */
+.main-menu ul li.has-mega-menu {
+    position: static !important;
+}
+
+/* Show State */
+.main-menu ul li:hover .graphixy-mega-dropdown {
+    opacity: 1;
+    visibility: visible;
+    margin-top: 1.5rem;
+}
+
+.graphixy-mega-dropdown {
+    position: absolute;
+    top: 100%;
+    /* Positions it right below the header wrapper */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 900px;
+    /* Max width constraint */
+    max-width: 95vw;
+    background-color: var(--color-bg-secondary);
+    /* Dark Grey Background */
+    border: none;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+    z-index: 900;
+    opacity: 0;
+    /* Hidden by default */
+    visibility: hidden;
+    transition: all var(--transition-normal);
+    margin-top: 15px;
+    /* Initial offset for animation */
+}
+
+/* --- Left Column: Services --- */
+.dropdown-content-wrapper {
+    padding: 1rem 1rem 1rem;
+}
+
+.services--dropdown-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem 1rem;
+    margin-right: 2rem;
+    /* 2 Columns */
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.service-link-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    border-radius: 8px;
+    transition: var(--transition-fast);
+    text-decoration: none;
+}
+
+.service-link-item .icon {
+    font-size: 1.2rem;
+    color: var(--color-accent-teal);
+    /* Turquoise Icon */
+    transition: var(--transition-fast);
+}
+
+.service-link-item span {
+    color: var(--color-text-secondary);
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-base);
+    transition: var(--transition-fast);
+}
+
+/* Hover Effect */
+.service-link-item:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.service-link-item:hover span {
+    color: var(--color-text-primary);
+    transform: translateX(5px);
+    /* Subtle slide */
+}
+
+.service-link-item:hover .icon {
+    color: var(--color-brand-primary);
+    /* Change to Blue on hover */
+}
+
+
+
+/* --- Right Column: CTA Panel --- */
+.dropdown-cta-panel {
+    height: 100%;
+    background: var(--gradient-hero);
+    /* Uses your Blue Gradient */
+    padding: var(--spacing-8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decorative Background Circle */
+.dropdown-cta-panel .shape-circle {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 150px;
+    height: 150px;
+    background: rgba(255, 222, 204, 0.1);
+    border-radius: 50%;
+}
+
+/* Central Icon Box */
+.cta-icon-box {
+    width: 70px;
+    height: 70px;
+    background: var(--color-brand-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--color-brand-primary);
+    margin-bottom: 1rem;
+    position: relative;
+    box-shadow: var(--shadow-md);
+}
+
+/* Tiny Stars decorations */
+.cta-icon-box .star-1,
+.cta-icon-box .star-2 {
+    position: absolute;
+    color: var(--color-accent-orange);
+    /* Yellow/Gold */
+    font-size: 0.8rem;
+}
+
+.cta-icon-box .star-1 {
+    top: -5px;
+    right: -5px;
+}
+
+.cta-icon-box .star-2 {
+    bottom: 0;
+    left: -5px;
+}
+
+/* Text Styling */
+.dropdown-cta-panel h3 {
+    color: var(--color-text-primary);
+    margin-bottom: 1rem;
+}
+
+.dropdown-cta-panel p {
+    color: var(--color-text-primary);
+    margin-bottom: 1.5rem;
+    font-size: var(--font-size-sm);
+}
+
+/* Floating Animation */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.floating-anim {
+    animation: float 4s ease-in-out infinite;
+}

@@ -1,0 +1,24 @@
+/* assets/css/layout/_grid.css */
+
+.container {
+  width: 100%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  
+  /* الحجم الأقصى المخصص لتصميمك */
+  max-width: 1290px; 
+}
+
+/* تحسينات الشبكة (اختياري) */
+.row {
+  --bs-gutter-x: 2rem;
+  --bs-gutter-y: 1rem;
+}
+
+/* أقسام بمسافات موحدة */
+.section-padding {
+  padding-top: clamp(6rem, 8vw, 10rem);
+  padding-bottom: clamp(6rem, 8vw, 10rem);
+}

@@ -1,0 +1,412 @@
+[
+  {
+    "id": 1,
+    "title": "إعادة بناء العلامة التجارية لشركة نماء",
+    "category": "هوية بصرية",
+    "filter": "Branding",
+    "client": "شركة نماء التقنية",
+    "date": "15 أكتوبر 2024",
+    "duration": "6 أسابيع",
+    "services": "إستراتيجية، شعار، هوية بصرية",
+    "website": "https://example.com",
+    "image": "https://placehold.co/1920x1080/2a2d34/ffffff?text=Namaa+Cover",
+    "home-image": "https://placehold.co/600x700/2ade34/fff1ff?text=Namaa",
+    "challenge-image": "https://placehold.co/1920x1080/2a2d34/00aaff?text=BYMUSTA",
+    "description": "مشروع متكامل لتحديث الصورة الذهنية لشركة تقنية رائدة، بهدف استهداف الأسواق العالمية مع الحفاظ على الجذور المحلية.",
+    "challenge": "كانت الشركة تعاني من هوية بصرية قديمة لا تعكس حجم تطورها التقني، مما جعلها تبدو كشركة تقليدية في سوق يغلي بالمنافسة. كان التحدي هو خلق هوية تجمع بين 'الثقة المؤسسية' و 'الحداثة التقنية'.",
+    "solution": "قمنا بتطوير نظام بصري يعتمد على التبسيط (Minimalism). استلهمنا الشعار من الدوائر الرقمية والخط العربي الكوفي. اعتمدنا لوحة ألوان تجمع بين الأزرق العميق (للثقة) والتركواز المشرق (للمستقبل).",
+    "result": "زيادة بنسبة 40% في تفاعل الجمهور على منصات التواصل، واعتماد الهوية الجديدة في 5 فروع إقليمية.",
+    "stats_number": "40%",
+    "stats_label": "زيادة في التفاعل",
+    "technologies": [
+      "Adobe Illustrator",
+      "Photoshop",
+      "After Effects",
+      "Figma"
+    ],
+    "gallery": [
+      "https://placehold.co/800x600/e0e0e0/333333?text=Stationery",
+      "https://placehold.co/800x600/e0e0e0/333333?text=Mobile+App",
+      "https://placehold.co/800x600/e0e0e0/333333?text=Billboard"
+    ],
+    "testimonial_text": "فريق Graphixy فهم رؤيتنا بدقة مذهلة. الهوية الجديدة لم تكن مجرد تغيير في الألوان، بل كانت نقلة نوعية في كيفية رؤية عملائنا لنا.",
+    "testimonial_author": "أحمد العلي - المدير التنفيذي",
+    "link": "/ar/projects/project-details.html?id=1"
+  },
+  {
+    "id": 2,
+    "title": "تصميم منصة تجارة إلكترونية لعلامة أروى",
+    "category": "تصميم مواقع",
+    "filter": "web",
+    "client": "شركة أروى للتجارة",
+    "date": "02 سبتمبر 2024",
+    "duration": "8 أسابيع",
+    "services": "تصميم UX/UI، تطوير واجهات، تجربة مستخدم",
+    "website": "https://example.com",
+    "image": "https://placehold.co/1920x1080/6a82fb/ffffff?text=Ecommerce+Cover",
+    "home-image": "https://placehold.co/600x700/6a82fb/ffffff?text=Ecommerce",
+    "challenge-image": "https://placehold.co/1920x1080/6a82fb/ffffff?text=UX+Challenge",
+    "description": "تطوير منصة تجارة إلكترونية حديثة تركز على تحسين تجربة الشراء وزيادة معدل التحويل عبر تصميم مرن ومتجاوب.",
+    "challenge": "الموقع السابق كان يعاني من ضعف في تجربة المستخدم وبطء في التصفح، مما أدى إلى ارتفاع معدل التخلي عن السلة.",
+    "solution": "إعادة بناء هيكل الصفحات، تحسين تدفق الشراء، وتصميم واجهات تعتمد على البساطة والوضوح مع تحسين الأداء.",
+    "result": "انخفاض معدل التخلي عن السلة بنسبة 28% خلال أول شهرين.",
+    "stats_number": "28%",
+    "stats_label": "انخفاض التخلي عن السلة",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Figma"
+    ],
+    "gallery": [
+      "https://placehold.co/800x600/e0e0e0/333333?text=Homepage",
+      "https://placehold.co/800x600/e0e0e0/333333?text=Product+Page",
+      "https://placehold.co/800x600/e0e0e0/333333?text=Checkout"
+    ],
+    "testimonial_text": "التجربة الجديدة غيرت طريقة تفاعل عملائنا مع المتجر بشكل واضح.",
+    "testimonial_author": "سارة بن يوسف – مديرة التسويق",
+    "link": "/ar/projects/project-details.html?id=2"
+  },
+  {
+    "id": 3,
+    "title": "حملة موشن جرافيك لإطلاق تطبيق صحي",
+    "category": "موشن جرافيك",
+    "filter": "motion",
+    "client": "HealthPlus",
+    "date": "20 يوليو 2024",
+    "duration": "4 أسابيع",
+    "services": "سكريبت، موشن جرافيك، مونتاج",
+    "website": "https://example.com",
+    "image": "https://placehold.co/1920x1080/f59f00/ffffff?text=Motion+Cover",
+    "home-image": "https://placehold.co/600x700/f59f00/ffffff?text=Motion",
+    "challenge-image": "https://placehold.co/1920x1080/f59f00/ffffff?text=Storyboard",
+    "description": "إنتاج فيديو تعريفي يشرح فكرة التطبيق الصحي بطريقة مبسطة وجذابة.",
+    "challenge": "تعقيد الفكرة الطبية وصعوبة إيصالها للمستخدم العادي خلال وقت قصير.",
+    "solution": "تحويل المعلومات الطبية إلى رسوم متحركة سلسة مع سيناريو مبني على قصة يومية.",
+    "result": "تحقيق أكثر من 120 ألف مشاهدة خلال أول أسبوع.",
+    "stats_number": "120K",
+    "stats_label": "مشاهدة خلال أسبوع",
+    "technologies": [
+      "After Effects",
+      "Illustrator",
+      "Premiere Pro"
+    ],
+    "gallery": [
+      "https://placehold.co/800x600/e0e0e0/333333?text=Scene+1",
+      "https://placehold.co/800x600/e0e0e0/333333?text=Scene+2"
+    ],
+    "testimonial_text": "الفيديو كان واضحًا، جذابًا، وساعدنا في شرح التطبيق بسهولة.",
+    "testimonial_author": "د. خالد مراد – مؤسس التطبيق",
+    "link": "/ar/projects/project-details.html?id=3"
+  },
+  {
+    "id": 4,
+    "title": "تصميم واجهة تطبيق توصيل ذكي",
+    "category": "UI/UX",
+    "filter": "Design",
+    "client": "FastGo",
+    "date": "10 يونيو 2024",
+    "duration": "5 أسابيع",
+    "services": "بحث مستخدم، تصميم واجهات، Prototype",
+    "website": "https://example.com",
+    "image": "https://placehold.co/1920x1080/48d1cc/ffffff?text=App+UI",
+    "home-image": "https://placehold.co/600x700/48d1cc/ffffff?text=App",
+    "challenge-image": "https://placehold.co/1920x1080/48d1cc/ffffff?text=UX+Flow",
+    "description": "تصميم تجربة استخدام لتطبيق توصيل تركز على السرعة وسهولة الطلب.",
+    "challenge": "كثرة الخطوات المطلوبة لإتمام الطلب في التطبيقات المنافسة.",
+    "solution": "تقليل عدد الخطوات، تحسين التسلسل البصري، واستخدام أيقونات واضحة.",
+    "result": "تحسن زمن إتمام الطلب بنسبة 35%.",
+    "stats_number": "35%",
+    "stats_label": "تحسين سرعة الطلب",
+    "technologies": [
+      "Figma",
+      "FigJam"
+    ],
+    "gallery": [
+      "https://placehold.co/800x600/e0e0e0/333333?text=Home+Screen",
+      "https://placehold.co/800x600/e0e0e0/333333?text=Order+Flow"
+    ],
+    "testimonial_text": "التصميم الجديد جعل التطبيق أسهل بكثير للمستخدمين.",
+    "testimonial_author": "محمد زروقي – مدير المنتج",
+    "link": "/ar/projects/project-details.html?id=4"
+  },
+  {
+    "id": 5,
+    "title": "متجر أزياء مودرن",
+    "category": "تطوير ويب",
+    "filter": "web",
+    "client": "مودرن فاشن",
+    "date": "20 سبتمبر 2024",
+    "duration": "8 أسابيع",
+    "services": "UI/UX, برمجة متجر, SEO",
+    "website": "https://example.com",
+    "image": "https://placehold.co/1920x1080/6a82fb/ffffff?text=Modern+Fashion",
+    "challenge-image": "https://placehold.co/1920x1080/2a2d34/00aaff?text=BYMUSTA",
+    "description": "تجربة تسوق إلكترونية سلسة وسريعة تدعم تعدد العملات واللغات.",
+    "challenge": "ارتفاع معدل ترك السلة (Cart Abandonment) بسبب تعقيد عملية الدفع وبطء الموقع على الهواتف.",
+    "solution": "إعادة بناء المتجر باستخدام تقنيات Headless Commerce لضمان سرعة فائقة، وتبسيط عملية الشراء لتتم في 3 خطوات فقط.",
+    "result": "انخفاض معدل ترك السلة بنسبة 25% وزيادة المبيعات عبر الجوال بنسبة 60%.",
+    "stats_number": "60%+",
+    "stats_label": "مبيعات الجوال",
+    "technologies": [
+      "Shopify",
+      "React.js",
+      "Tailwind CSS"
+    ],
+    "gallery": [
+      "https://placehold.co/800x600/e0e0e0/333333?text=Product+Page",
+      "https://placehold.co/800x600/e0e0e0/333333?text=Checkout"
+    ],
+    "testimonial_text": "الموقع الجديد سريع جداً، وعملاؤنا لاحظوا الفرق فوراً.",
+    "testimonial_author": "سارة محمد - مديرة التسويق",
+    "link": "/ar/projects/project-details.html?id=5"
+  },
+  {
+    "id": 6,
+    "title": "منصة تعليمية تفاعلية",
+    "category": "تطوير ويب",
+    "filter": "web",
+    "client": "إدراك أكاديمي",
+    "date": "15 نوفمبر 2024",
+    "duration": "10 أسابيع",
+    "services": "UI/UX, تطوير واجهة المستخدم, دمج نظام LMS",
+    "website": "https://example.com",
+    "image": "https://placehold.co/1920x1080/4ecdc4/ffffff?text=Edrak+Academy",
+    "challenge-image": "https://placehold.co/1920x1080/2a2d34/00aaff?text=BYMUSTA",
+    "description": "منصة رقمية متكاملة لتقديم الدورات التعليمية عبر الإنترنت مع دعم التتبع التفاعلي للتقدم الدراسي.",
+    "challenge": "صعوبة في تجربة المستخدم على الأجهزة المحمولة وانخفاض التفاعل مع المحتوى التعليمي.",
+    "solution": "تصميم واجهة مستخدم بديهية مبنية على مبادئ التصميم التفاعلي، واستخدام إطار عمل Vue.js مع نظام LMS مفتوح المصدر مُحسّن للهواتف.",
+    "result": "زيادة نسبة إكمال الدورات بنسبة 35%، وتحسّن رضا المستخدمين بنسبة 50% حسب استطلاعات ما بعد الاستخدام.",
+    "stats_number": "35%+",
+    "stats_label": "إكمال الدورات",
+    "technologies": [
+      "Vue.js",
+      "Laravel",
+      "SCSS"
+    ],
+    "gallery": [
+      "https://placehold.co/800x600/e0e0e0/333333?text=Course+Dashboard",
+      "https://placehold.co/800x600/e0e0e0/333333?text=Mobile+View"
+    ],
+    "testimonial_text": "المنصة الجديدة غيّرت طريقة تفاعل طلابنا مع المحتوى، وأصبح التعلم أكثر تشويقًا وسلاسة.",
+    "testimonial_author": "د. خالد عزام - مؤسس إدراك أكاديمي",
+    "link": "/ar/projects/project-details.html?id=6"
+  },
+  {
+    "id": 7,
+    "title": "تطبيق حجز مواعيد طبية",
+    "category": "تطوير ويب",
+    "filter": "web",
+    "client": "عيادة النور",
+    "date": "5 يناير 2025",
+    "duration": "7 أسابيع",
+    "services": "UI/UX, برمجة واجهة, تكامل قاعدة بيانات",
+    "website": "https://example.com",
+    "image": "https://placehold.co/1920x1080/ff6b6b/ffffff?text=Clinic+Nour",
+    "challenge-image": "https://placehold.co/1920x1080/2a2d34/00aaff?text=BYMUSTA",
+    "description": "منصة رقمية تُمكّن المرضى من حجز المواعيد، مراجعة سجلاتهم الطبية، والتواصل مع الأطباء.",
+    "challenge": "عدم وجود نظام مركزي لتنظيم المواعيد، مما تسبب في الازدواجية وفقدان البيانات.",
+    "solution": "بناء نظام إدارة متكامل مع واجهة مستخدم بسيطة وآمنة، ودعم الإشعارات عبر البريد والرسائل القصيرة.",
+    "result": "خفض وقت الانتظار بنسبة 40% وزيادة رضا المرضى بنسبة 55%.",
+    "stats_number": "55%+",
+    "stats_label": "رضا المرضى",
+    "technologies": [
+      "React.js",
+      "Node.js",
+      "MongoDB"
+    ],
+    "gallery": [
+      "https://placehold.co/800x600/e0e0e0/333333?text=Appointment+Screen",
+      "https://placehold.co/800x600/e0e0e0/333333?text=Patient+Profile"
+    ],
+    "testimonial_text": "أصبحت إدارة العيادة أسهل بكثير، وثقتنا بالبيانات أعلى من أي وقت مضى.",
+    "testimonial_author": "د. ليلى فرحات - مديرة العيادة",
+    "link": "/ar/projects/project-details.html?id=7"
+  },
+  {
+    "id": 8,
+    "title": "موقع وكالة سفر فاخر",
+    "category": "تطوير ويب",
+    "filter": "web",
+    "client": "سماء السفر",
+    "date": "22 فبراير 2025",
+    "duration": "9 أسابيع",
+    "services": "تصميم بصري, تطوير ويب, تحسين محركات البحث",
+    "website": "https://example.com",
+    "image": "https://placehold.co/1920x1080/5d9cec/ffffff?text=Samaa+Travel",
+    "challenge-image": "https://placehold.co/1920x1080/2a2d34/00aaff?text=BYMUSTA",
+    "description": "موقع جذاب يعرض باقات سفر فاخرة مع دعم الحجز الفوري عبر الإنترنت.",
+    "challenge": "انخفاض معدل التحويل بسبب تصميم قديم وعدم دعم اللغة العربية بشكل كامل.",
+    "solution": "إعادة تصميم الموقع بدعم كامل للعربية والإنجليزية، مع نظام حجز متكامل وواجهة متجاوبة.",
+    "result": "زيادة الحجوزات عبر الإنترنت بنسبة 70% خلال الربع الأول من الإطلاق.",
+    "stats_number": "70%+",
+    "stats_label": "الحجوزات الإلكترونية",
+    "technologies": [
+      "Next.js",
+      "Tailwind CSS",
+      "Stripe API"
+    ],
+    "gallery": [
+      "https://placehold.co/800x600/e0e0e0/333333?text=Destination+Page",
+      "https://placehold.co/800x600/e0e0e0/333333?text=Booking+Flow"
+    ],
+    "testimonial_text": "التصميم الجديد انعكس إيجابًا على صورة علامتنا التجارية وجذب عملاء جدد.",
+    "testimonial_author": "يوسف مجدوب - مدير التسويق",
+    "link": "/ar/projects/project-details.html?id=8"
+  },
+  {
+    "id": 9,
+    "title": "منصة عقارات ذكية",
+    "category": "تطوير ويب",
+    "filter": "web",
+    "client": "دار العقارية",
+    "date": "10 مارس 2025",
+    "duration": "11 أسابيع",
+    "services": "تطوير واجهة, بحث ذكي, خرائط تفاعلية",
+    "website": "https://example.com",
+    "image": "https://placehold.co/1920x1080/43cea2/ffffff?text=Dar+Real+Estates",
+    "challenge-image": "https://placehold.co/1920x1080/2a2d34/00aaff?text=BYMUSTA",
+    "description": "منصة عقارية متقدمة تتيح البحث بالفلاتر الذكية، عرض 360°، ومقارنات تلقائية.",
+    "challenge": "ضياع فرص البيع بسبب ضعف عرض العقارات وعدم وجود مقارنات سريعة.",
+    "solution": "دمج تقنيات الواقع المعزز، خرائط تفاعلية، ومحرك بحث ذكي يدعم الميزانية والموقع والمرافق.",
+    "result": "زيادة عدد الاستفسارات بنسبة 85% وتحسّن مدة بيع العقار بنسبة 30%.",
+    "stats_number": "85%+",
+    "stats_label": "الاستفسارات",
+    "technologies": [
+      "Vue.js",
+      "Mapbox",
+      "Firebase"
+    ],
+    "gallery": [
+      "https://placehold.co/800x600/e0e0e0/333333?text=Property+360",
+      "https://placehold.co/800x600/e0e0e0/333333?text=Smart+Filters"
+    ],
+    "testimonial_text": "الموقع صنع فارقًا حقيقيًا في أداء فريق المبيعات لدينا.",
+    "testimonial_author": "أحمد رشيد - مدير المبيعات",
+    "link": "/ar/projects/project-details.html?id=9"
+  },
+  {
+    "id": 10,
+    "title": "موقع مطعم فاخر",
+    "category": "تطوير ويب",
+    "filter": "web",
+    "client": "مطعم زعفران",
+    "date": "30 مارس 2025",
+    "duration": "6 أسابيع",
+    "services": "تصميم بصري, تكامل حجز طاولات, قائمة تفاعلية",
+    "website": "https://example.com",
+    "image": "https://placehold.co/1920x1080/d299c2/ffffff?text=Zafran+Restaurant",
+    "challenge-image": "https://placehold.co/1920x1080/2a2d34/00aaff?text=BYMUSTA",
+    "description": "موقع أنيق يعرض القائمة، يسمح بحجز الطاولات، ويُبرز تجربة الطعام الفاخرة.",
+    "challenge": "عدم وجود نظام حجز رقمي، وضياع الحجوزات عبر الهاتف.",
+    "solution": "تصميم تجربة حسية تعكس طابع المطعم مع نظام حجز ذكي ومزامنة مع نظام إدارة المطعم.",
+    "result": "تحقيق تشغيل 95% من الطاولات يوميًا وزيادة الحجوزات عبر الموقع بنسبة 60%.",
+    "stats_number": "95%",
+    "stats_label": "نسبة التشغيل",
+    "technologies": [
+      "React",
+      "Styled Components",
+      "Calendly API"
+    ],
+    "gallery": [
+      "https://placehold.co/800x600/e0e0e0/333333?text=Menu+Interactive",
+      "https://placehold.co/800x600/e0e0e0/333333?text=Reservation+Page"
+    ],
+    "testimonial_text": "أصبحت عملية الحجز سلسة وانعكست إيجابًا على تجربة الضيوف.",
+    "testimonial_author": "نادية كريم - مالكة المطعم",
+    "link": "/ar/projects/project-details.html?id=10"
+  },
+  {
+    "id": 11,
+    "title": "منصة محتوى تعليمي للأطفال",
+    "category": "تطوير ويب",
+    "filter": "web",
+    "client": "ذكاء الصغار",
+    "date": "12 أبريل 2025",
+    "duration": "10 أسابيع",
+    "services": "UX للأطفال, تطوير تفاعلي, نظام تقدم شخصي",
+    "website": "https://example.com",
+    "image": "https://placehold.co/1920x1080/ffcc5c/333333?text=Zekaa+Kids",
+    "challenge-image": "https://placehold.co/1920x1080/2a2d34/00aaff?text=BYMUSTA",
+    "description": "منصة تفاعلية تُقدّم محتوى تعليميًا مسلّيًا للأطفال من 4 إلى 10 سنوات.",
+    "challenge": "تشتت انتباه الأطفال بسبب ضعف التفاعل وعدم وجود حوافز داخلية.",
+    "solution": "تصميم تجربة تشبه الألعاب (Gamification) مع مكافآت رقمية، تقدم مخصص، وواجهة بسيطة للأطفال.",
+    "result": "معدل تفاعل الأطفال ارتفع إلى 22 دقيقة في الجلسة الواحدة، مقارنة بـ 7 دقائق سابقًا.",
+    "stats_number": "22 دقيقة",
+    "stats_label": "متوسط وقت الجلسة",
+    "technologies": [
+      "React",
+      "GSAP",
+      "Firebase"
+    ],
+    "gallery": [
+      "https://placehold.co/800x600/e0e0e0/333333?text=Game+Lesson",
+      "https://placehold.co/800x600/e0e0e0/333333?text=Reward+System"
+    ],
+    "testimonial_text": "أول مرة أرى ابني يركز بهذا القدر على محتوى تعليمي!",
+    "testimonial_author": "سمر عبد الله - والدة مستخدم",
+    "link": "/ar/projects/project-details.html?id=11"
+  },
+  {
+    "id": 12,
+    "title": "موقع شركة لوجستية",
+    "category": "تطوير ويب",
+    "filter": "web",
+    "client": "سريع إكسبريس",
+    "date": "25 أبريل 2025",
+    "duration": "8 أسابيع",
+    "services": "تتبع الشحنات, لوحة تحكم, تصميم متجاوب",
+    "website": "https://example.com",
+    "image": "https://placehold.co/1920x1080/34ace0/ffffff?text=Saree3+Express",
+    "challenge-image": "https://placehold.co/1920x1080/2a2d34/00aaff?text=BYMUSTA",
+    "description": "موقع يوفر تتبعًا مباشرًا للشحنات، طلب خدمة، وعرض لحلول الشحن المخصصة.",
+    "challenge": "عدم شفافية تتبع الشحنات أدّى إلى تكرار الاستفسارات من العملاء.",
+    "solution": "بناء نظام تتبع مباشر مع تحديثات لحظية وواجهة واضحة للشركات والأفراد.",
+    "result": "خفض مكالمات خدمة العملاء بنسبة 50% وتحسين تقييمات الخدمة على المنصات.",
+    "stats_number": "50%-",
+    "stats_label": "مكالمات الدعم",
+    "technologies": [
+      "Vue.js",
+      "Socket.IO",
+      "SCSS"
+    ],
+    "gallery": [
+      "https://placehold.co/800x600/e0e0e0/333333?text=Tracking+Page",
+      "https://placehold.co/800x600/e0e0e0/333333?text=Business+Solutions"
+    ],
+    "testimonial_text": "العملاء أصبحوا أكثر رضا لأنهم يعرفون مكان شحناتهم في كل لحظة.",
+    "testimonial_author": "خالد بوسعيد - مدير العمليات",
+    "link": "/ar/projects/project-details.html?id=12"
+  },
+  {
+    "id": 13,
+    "title": "منصة لبيع المنتجات اليدوية",
+    "category": "تطوير ويب",
+    "filter": "web",
+    "client": "حرفيون",
+    "date": "8 مايو 2025",
+    "duration": "9 أسابيع",
+    "services": "متجر إلكتروني, تصميم هوية, دعم متعدد البائعين",
+    "website": "https://example.com",
+    "image": "https://placehold.co/1920x1080/f9ca24/333333?text=Harfeyoon",
+    "challenge-image": "https://placehold.co/1920x1080/2a2d34/00aaff?text=BYMUSTA",
+    "description": "سوق إلكتروني يجمع الحرفيين المحليين لعرض منتجاتهم اليدوية للجمهور.",
+    "challenge": "صعوبة تمييز المنتجات الحرفية عن المنتجات الصناعية في الأسواق العامة.",
+    "solution": "تصميم منصة مخصصة تروي قصص الحرفيين، مع دعم بصري يعكس الطابع اليدوي لكل منتج.",
+    "result": "تمكين 120 حرفيًا من عرض أعمالهم، وتحقيق مبيعات تجاوزت 200,000 ريال في أول 3 أشهر.",
+    "stats_number": "200K+",
+    "stats_label": "إجمالي المبيعات",
+    "technologies": [
+      "Shopify Plus",
+      "Custom App",
+      "Algolia"
+    ],
+    "gallery": [
+      "https://placehold.co/800x600/e0e0e0/333333?text=Artisan+Story",
+      "https://placehold.co/800x600/e0e0e0/333333?text=Product+Detail"
+    ],
+    "testimonial_text": "لأول مرة أشعر أن منتجي يُقدّر ويُعرض بطريقة تحترم جهدي.",
+    "testimonial_author": "منى الحربي - حرفية في التطريز",
+    "link": "/ar/projects/project-details.html?id=13"
+  }
+]

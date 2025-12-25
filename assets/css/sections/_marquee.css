@@ -1,0 +1,189 @@
+/* ------  Marqee Section CSS Start  ------ */
+
+.marquee-strip-about {
+  position: relative;
+}
+
+.marquee-strip-about .marque-group {
+  display: flex;
+  overflow: hidden;
+}
+
+.marquee-strip-about .marque-group .marque-wrapper-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-brand-primary);
+  padding: 40px 0;
+  gap: 3.5rem;
+  flex-shrink: 0;
+  white-space: nowrap;
+  max-width: max-content;
+  transform: translateX(0);
+  animation: scroll-1 300s linear infinite;
+}
+
+.marquee-strip-about .marque-group .marque-wrapper-1:hover {
+  animation-play-state: paused;
+}
+
+.marquee-strip-about .marque-group .marque-wrapper-1 span {
+  text-transform: uppercase;
+  color: var(--color-text-dark);
+
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.marquee-strip-about .marque-group .marque-wrapper-2 {
+  display: flex;
+  align-items: center;
+  min-width: 100%;
+  background-color: var(--color-bg-secondary);
+  padding: 40px 0;
+  gap: 3.5rem;
+  flex-shrink: 0;
+  max-width: max-content;
+  transform: translateX(0);
+  animation: scroll-2 300s linear infinite;
+}
+
+.marquee-strip-about .marque-group .marque-wrapper-2:hover {
+  animation-play-state: paused;
+}
+
+.marquee-strip-about .marque-group .marque-wrapper-2 span {
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+
+
+/* start Marqee Area */
+
+.marquee-strip {
+  position: relative;
+  background: linear-gradient(-180deg,
+      var(--color-brand-primary) 10%,
+      var(--color-brand-secondary) 80%);
+}
+
+.marquee-strip.marque-home {
+  background: linear-gradient(-180deg,
+      var(--color-brand-primary) 10%,
+      var(--color-brand-secondary) 80%);
+}
+
+.marquee-strip img {
+  position: relative;
+  z-index: 1;
+  margin: auto;
+  max-width: 940px;
+}
+
+@media (max-width: 768px) {
+  .marquee-strip img {
+    max-width: 740px;
+  }
+}
+
+@media (max-width: 660px) {
+  .marquee-strip img {
+    max-width: 640px;
+  }
+}
+
+@media (max-width: 525px) {
+  .marquee-strip img {
+    max-width: 43rem;
+  }
+}
+
+@media (max-width: 424px) {
+  .marquee-strip img {
+    max-width: 33rem;
+  }
+}
+
+.marquee-strip .marque-1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  position: absolute;
+  top: 20%;
+  width: 100%;
+}
+
+.marquee-strip .marque-1:hover span {
+  animation-play-state: paused;
+}
+
+@media (max-width: 575px) {
+  .marquee-strip .marque-1 {
+    top: 16%;
+  }
+}
+
+.marquee-strip .marque-1.marque-2 {
+  top: 60%;
+  z-index: 2;
+}
+
+@media (max-width: 575px) {
+  .marquee-strip .marque-1.marque-2 {
+    top: 40%;
+  }
+}
+
+.marquee-strip .marque-1.marque-2:hover span {
+  animation-play-state: paused;
+}
+
+.marquee-strip .marque-1.marque-2 span {
+  animation: marquee1 24s linear infinite;
+}
+
+.marquee-strip .marque-1 span {
+  text-transform: uppercase;
+  will-change: transform;
+  transform: translateX(0);
+  white-space: nowrap;
+  animation: marquee 24s linear infinite;
+  color: var(--color-text-primary);
+  font-size: 8.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 11.25rem;
+  text-shadow:
+    -0.5rem 0.5rem 5px rgba(0, 0, 0, 0.1),
+    -0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1),
+    -0.5rem 0.5rem 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 991px) {
+  .marquee-strip .marque-1 span {
+    font-size: 6.25rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .marquee-strip .marque-1 span {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .marquee-strip .marque-1 span {
+    font-size: 2.5rem;
+  }
+}
+
+/* End Marqee Area */

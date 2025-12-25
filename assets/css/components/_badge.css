@@ -1,0 +1,12 @@
+/* البادج العلوي */
+.badge-pill {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--color-accent-teal);
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}

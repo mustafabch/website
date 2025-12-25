@@ -1,0 +1,206 @@
+/* ------  Graphixy Whois Section CSS Start ------ */
+
+.whois-area {
+  position: relative;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.whois-area .grx-whois-shep-1 {
+  position: absolute;
+  left: 0;
+  top: -42%;
+}
+
+@media (max-width: 991px) {
+  .whois-area {
+    padding-top: 4.25rem;
+    padding-bottom: 4.25rem;
+  }
+}
+
+.whois-area .whois-wrapper .nav-tabs button.active {
+  border-bottom: 1px solid var(--color-brand-primary);
+}
+
+.whois-area .whois-inner .whois-item .whois-item-wrapper-1 .whois-text-inner .whois-list h5 {
+  color: var(--color-brand-primary);
+}
+
+.whois-area .whois-inner .whois-item .whois-item-wrapper-1 .whois-text-inner .whois-list .whois-list-wrapper .whois-point svg path {
+  fill: var(--color-brand-primary);
+}
+
+@media (max-width: 991px) {
+  .whois-area {
+    padding-top: 4.25rem;
+  }
+}
+
+.whois-area .grx-whois-area-bg-shep-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.whois-area .grx-whois-area-bg-shep-2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@media (max-width: 532px) {
+  .whois-area .title .main-title h2 br {
+    display: none;
+  }
+}
+
+.whois-area .whois-wrapper {
+  margin-top: 65px;
+}
+
+@media (max-width: 532px) {
+  .whois-area .whois-wrapper nav .nav-tabs {
+    min-width: 100%;
+  }
+
+  .whois-area .whois-wrapper nav .nav-tabs button {
+    width: 100%;
+  }
+}
+
+.whois-area .whois-wrapper nav .nav-tabs {
+  border-bottom: none;
+  justify-content: space-between;
+}
+
+.whois-area .whois-wrapper nav .nav-tabs button {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  font-family: 'Readex Pro Variable', sans-serif;
+  color: var(--color-text-primary);
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 15px 2rem 1.5rem 2rem;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.whois-area .whois-wrapper nav .nav-tabs button.active {
+  background-color: var(--color-overlay-light-10);
+  color: var(--color-text-primary);
+  border-bottom: 3px solid var(--color-accent-teal);
+}
+
+.whois-area .whois-inner {
+  margin-top: 75px;
+}
+
+.whois-area .whois-inner .whois-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 767px) {
+  .whois-area .whois-inner .whois-item {
+    display: block;
+  }
+}
+
+.whois-area .whois-inner .whois-item .whois-item-wrapper-1 {
+  width: 55%;
+}
+
+@media (max-width: 991px) {
+  .whois-area .whois-inner .whois-item .whois-item-wrapper-1 {
+    width: 55%;
+  }
+}
+
+@media (max-width: 767px) {
+  .whois-area .whois-inner .whois-item .whois-item-wrapper-1 {
+    width: 100%;
+  }
+}
+
+.whois-area .whois-inner .whois-item .whois-item-wrapper-1 .whois-text-inner h4 {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem;
+  color: var(--color-text-primary);
+  font-family: 'Readex Pro', sans-serif;
+  margin-bottom: 1rem;
+}
+
+.whois-area .whois-inner .whois-item .whois-item-wrapper-1 .whois-text-inner p {
+  font-family: 'Readex Pro', sans-serif;
+  color: var(--color-text-primary);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75rem;
+}
+
+.whois-area .whois-inner .whois-item .whois-item-wrapper-1 .whois-text-inner .whois-list {
+  margin: 44px 0 44px 0;
+}
+
+.whois-area .whois-inner .whois-item .whois-item-wrapper-1 .whois-text-inner .whois-list h5 {
+  color: var(--color-accent-teal);
+  font-family: 'Readex Pro', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem;
+  margin-top: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.whois-area .whois-inner .whois-item .whois-item-wrapper-1 .whois-text-inner .whois-list .whois-list-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 1178px) {
+  .whois-area .whois-inner .whois-item .whois-item-wrapper-1 .whois-text-inner .whois-list .whois-list-wrapper {
+    display: block;
+  }
+}
+
+.whois-area .whois-inner .whois-item .whois-item-wrapper-1 .whois-text-inner .whois-list .whois-list-wrapper .whois-point {
+  display: flex;
+  margin-bottom: 0.75rem;
+  gap: 0.5rem;
+  align-items: center;
+  color: var(--color-text-primary);
+}
+
+@media (max-width: 767px) {
+  .whois-area .whois-inner .whois-item .whois-item-wrapper-2 {
+    width: 100%;
+  }
+}
+
+.whois-area .whois-inner .whois-item .whois-item-wrapper-2 .whois-banner {
+  overflow: hidden;
+}
+
+.whois-area .whois-inner .whois-item .whois-item-wrapper-2 .whois-banner img {
+  max-width: 400px;
+}
+
+@media (max-width: 767px) {
+  .whois-area .whois-inner .whois-item .whois-item-wrapper-2 .whois-banner {
+    margin-top: 4.5rem;
+  }
+
+  .whois-area .whois-inner .whois-item .whois-item-wrapper-2 .whois-banner img {
+    margin: auto;
+    max-width: 100%;
+  }
+}

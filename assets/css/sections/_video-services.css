@@ -1,0 +1,161 @@
+/* Start video services area */
+
+.video-services {
+  position: relative;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (max-width: 991px) {
+  .video-services {
+    padding-top: 4.25rem;
+    padding-bottom: 4.25rem;
+  }
+}
+
+.video-services .title {
+  text-align: right;
+}
+
+@media (max-width: 991px) {
+  .video-services .title {
+    text-align: center;
+  }
+}
+
+.video-services .title p {
+  color: var(--color-text-primary);
+}
+
+.video-services .title h2 span {
+  color: var(--color-accent-red);
+  position: unset;
+}
+
+@media (max-width: 998px) {
+  .video-services .title h2 br {
+    display: none;
+  }
+}
+
+.video-services .video-ser-banner {
+  overflow: hidden;
+  width: 100%;
+  max-width: 53rem;
+}
+
+@media (max-width: 991px) {
+  .video-services .video-ser-banner img {
+    margin: auto;
+  }
+}
+
+.video-services .video-ser-inner {
+  margin-top: 2.25rem;
+}
+
+.video-services .video-ser-inner .video-ser-item {
+  display: flex;
+  align-items: start;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 991px) {
+  .video-services .video-ser-inner .video-ser-item {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 452px) {
+  .video-services .video-ser-inner .video-ser-item {
+    gap: 1rem;
+  }
+}
+
+.video-services .video-ser-inner .video-ser-item:last-child {
+  margin-bottom: 0;
+}
+
+.video-services .video-ser-inner .video-ser-item .video-ser-icon {
+  padding: 0 0 0 0;
+  margin-top: 2rem;
+}
+
+.video-services .video-ser-inner .video-ser-item .video-ser-text {
+  padding: 0;
+  flex: 1;
+  /* Ensure text takes remaining space */
+  min-width: 0;
+  /* Prevent flex overflow */
+}
+
+.video-services .video-ser-inner .video-ser-item p {
+  color: var(--color-text-primary);
+  text-align: justify;
+  margin-top: 0.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+.video-services .video-ser-inner .video-ser-item .video-ser-title {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: flex-end;
+  width: 100%;
+  margin-bottom: 1rem;
+  flex-wrap: nowrap !important;
+  gap: 0 !important;
+}
+
+/* Align h5 */
+.video-services .video-ser-inner .video-ser-item .video-ser-title h5 {
+  margin: 0;
+  color: var(--color-text-primary);
+  font-weight: 700;
+  width: auto !important;
+  /* Prevent full width forcing new line */
+  flex: 1 1 auto;
+}
+
+/* Align servi-link */
+.video-services .video-ser-inner .video-ser-item .video-ser-title .servi-link {
+  margin: 0;
+  color: var(--color-accent-red) !important;
+  flex-shrink: 0;
+  /* Prevent link wrapping */
+}
+
+/* Style the servi-link anchor for better alignment */
+.video-services .video-ser-inner .video-ser-item .video-ser-title .servi-link a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: opacity 0.3s ease;
+  color: var(--color-accent-teal);
+  /* Text color */
+}
+
+/* Hover effect for the link */
+.video-services .video-ser-inner .video-ser-item .video-ser-title .servi-link a:hover {
+  opacity: 0.8;
+}
+
+/* Adjust the SVG icon in the link */
+.video-services .video-ser-inner .video-ser-item .video-ser-title .servi-link a svg {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+
+.serv-detai-btn {
+  margin-top: 2.5rem;
+  color: var(--color-accent-red);
+}
+
+/* End video services area */

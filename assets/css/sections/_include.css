@@ -1,0 +1,69 @@
+/* start include area */
+
+.include-area {
+  background-color: var(--color-brand-secondary);
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: relative;
+  z-index: -100;
+}
+
+.include-area .include-area-wrapper .include-area-text h3 {
+  color: var(--color-text-primary);
+}
+
+.include-area .include-area-wrapper .include-area-text p {
+  text-align: justify;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  color: var(--color-text-primary);
+}
+
+
+
+
+
+
+@media (max-width: 1188px) {
+  .include-area .include-area-wrapper .include-area-list ul {
+    margin-top: 2rem;
+  }
+}
+
+.include-area .include-area-wrapper .include-area-list ul li {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.include-area .include-area-wrapper .include-area-list ul li:last-child {
+  margin-bottom: 0;
+}
+
+.include-area .include-area-wrapper .include-area-list ul li span {
+  color: var(--color-text-primary);
+
+  font-style: normal;
+  font-weight: 500;
+}
+
+.include-area.include-area-wrapper .include-area-list ul li svg {
+  min-width: 3rem !important;
+}
+
+.include-area.include-area-wrapper .include-area-list ul li svg path {
+  fill: var(--color-accent-teal);
+}
+
+.include-area .include-area-wrapper .include-area-list ul li svg path {
+  fill: var(--color-accent-red);
+}
+
+.include-area .include-area-wrapper .include-area-list ul li:nth-child(2) span {
+  color: var(--color-text-primary);
+}
+
+/* end include area */

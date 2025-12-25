@@ -1,0 +1,600 @@
+button {
+  cursor: pointer;
+}
+
+/* Button 1 btn-1 */
+
+.btn-1 {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  color: var(--color-text-dark);
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1rem;
+  text-align: center;
+  background: var(--color-brand-secondary);
+  vertical-align: middle;
+  border-radius: var(--radius-lg);
+  z-index: 1;
+  transition-duration: 0.3s;
+  transition: 0.3s ease-out;
+  transform: perspective(1px) translateZ(0);
+  transition-property: color;
+}
+
+.btn-1::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: var(--color-accent-teal);
+  transform-origin: 51%;
+  transition: 0.3s ease-out;
+  z-index: -1;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  transition-property: transform;
+}
+
+.btn-1:hover {
+  color: var(--color-neutral-light) !important;
+  background: var(--color-accent-teal);
+  transform: translateY(-2px);
+}
+
+.btn-1:hover::before {
+  background: var(--color-brand-primary);
+  transform: scaleX(0);
+}
+
+
+
+/* Button 2 btn-2 */
+.btn-2 {
+  color: var(--color-text-primary);
+  padding: 1rem 2rem;
+  font-weight: 500;
+  line-height: 125%;
+  text-align: center;
+  background: transparent;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-btn-accent-text);
+  transition: 0.3s ease-out;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.btn-2 span {
+  margin-right: 0.5rem;
+}
+
+.btn-2::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: var(--color-bg-light);
+  transition: 0.4s ease-out;
+  z-index: -1;
+  width: 0%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: var(--radius-lg);
+}
+
+.btn-2:hover {
+  color: var(--color-text-dark);
+  background: var(--color-bg-light);
+  transform: translateY(-2px);
+}
+
+.btn-2:hover::before {
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.btn-2:hover svg path {
+  fill: var(--color-icon-fill-dark);
+}
+
+
+/* Button 3 btn-3 */
+.btn-3 {
+  color: var(--color-text-dark);
+  padding: 1rem 2rem;
+  font-weight: 500;
+  line-height: 125%;
+  text-align: center;
+  background: var(--color-accent-teal);
+  border-radius: var(--radius-lg);
+  transition: 0.3s ease-out;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.btn-3 span {
+  margin-right: 0.5rem;
+}
+
+.btn-3::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 0;
+  width: 100%;
+  background: var(--color-accent-teal);
+  transition: 0.4s ease-out;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.btn-3:hover {
+  color: var(--color-btn-accent-text);
+  background: var(--color-btn-secondary-bg);
+  transform: translateY(-2px);
+}
+
+.btn-3:hover::before {
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+  background: var(--color-hover-overlay);
+}
+
+.btn-3:hover svg path {
+  fill: var(--color-icon-fill-dark);
+}
+
+
+/* Button 4 btn-4 */
+
+/* Button 5 btn-5 */
+
+.btn-5 {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: var(--color-text-primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  padding: 12px 30px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.btn-5:hover {
+  background: var(--color-neutral-light);
+  color: var(--color-text-dark);
+  border-color: var(--color-text-primary);
+  transform: translateY(-2px);
+}
+
+
+/* Button 6 btn-6 */
+
+.btn-6 {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--color-btn-accent-text);
+  background-color: var(--color-btn-secondary-bg);
+  border: none;
+  border-radius: var(--radius-lg);
+  box-shadow: -5px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-6:hover {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--color-text-primary);
+  background-color: var(--color-accent-teal);
+  border: none;
+  box-shadow: -5px 10px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+
+/* Button 7 two-btns */
+
+.two-btns-row {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.two-btns-row a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0.5rem;
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  flex-direction: row;
+  white-space: nowrap;
+}
+
+/* الأزرار */
+
+.btn-s1 {
+  background-color: var(--color-accent-teal);
+  color: var(--color-text-primary);
+}
+
+.btn-s1:hover {
+  background-color: var(--color-btn-primary-bg);
+  transform: translateY(-2px);
+}
+
+.btn-s2 {
+  background-color: var(--color-text-primary);
+  color: var(--color-text-dark);
+}
+
+.btn-s2:hover {
+  background-color: var(--color-text-primary);
+  transform: translateY(-2px);
+}
+
+.btn-s3 {
+  background-color: transparent;
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-neutral-light);
+}
+
+.btn-s3:hover {
+  background-color: var(--color-brand-primary);
+  border: 1px solid var(--color-brand-primary);
+  transform: translateY(-2px);
+}
+
+.btn-s4 {
+  background-color: var(--color-text-primary);
+  color: var(--color-text-dark);
+}
+
+.btn-s4:hover {
+  background-color: var(--color-text-primary);
+  transform: translateY(-2px);
+}
+
+/* تأثير الأيقونات */
+.two-btns-row a svg {
+  width: 1rem;
+  height: 1rem;
+  fill: none;
+  margin-right: 1rem;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform 0.2s ease;
+}
+
+.two-btns-row a:hover svg {
+  transform: scale(1.1);
+}
+
+/* استجابة للشاشات الصغيرة */
+@media (max-width: 768px) {
+  .two-btns-row {
+    flex-direction: column;
+  }
+
+  .two-btns-row a {
+    width: 80%;
+    max-width: 18.75rem;
+    justify-content: center;
+  }
+
+  .two-btns-row a svg {
+    order: 1;
+  }
+}
+
+
+/* Button 8 booking-btn */
+
+.booking-btn {
+  display: flex;
+  text-wrap-mode: nowrap;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--color-btn-primary-bg);
+  color: var(--color-text-primary);
+  padding: 1rem 1rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px var(--glow-primary);
+}
+
+
+
+.booking-btn:hover {
+  background-color: var(--color-accent-teal);
+  color: var(--color-text-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px var(--glow-turquoise);
+}
+
+
+.booking-btn i {
+  width: 24px;
+  height: 24px;
+  fill: var(--color-neutral-light);
+}
+
+
+
+@media (max-width: 991px) {
+  .booking-btn span {
+    display: none;
+  }
+
+  .booking-btn {
+    padding: 1.5rem;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .booking-btn i {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
+
+/* Button 9 group-hover-btn */
+.group-hover-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  gap: 0.8rem;
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius-lg);
+  transition: background-color 0.25s ease;
+}
+
+.group-hover-btn:hover {
+  color: var(--color-accent-teal);
+}
+
+.group-hover-btn i {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: var(--color-bg-muted);
+  color: #4a5568;
+  font-size: 1.25rem;
+
+}
+
+.group-hover-btn:hover i {
+  background-color: var(--color-accent-teal);
+  color: #1a202c;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+/* Button 10 group-hover-btn */
+
+.slider-btn {
+  position: relative;
+}
+
+@media (max-width: 899px) {
+  .slider-btn {
+    position: absolute;
+    right: 50%;
+  }
+
+  .slider-btn {
+    position: absolute;
+    left: 50%;
+  }
+}
+
+.slider-btn .swiper-button-next,
+.slider-btn .swiper-button-prev {
+  width: 3.5rem;
+  height: 3.5rem;
+  border: 1px solid #252525;
+  background: var(--color-accent-teal);
+  text-align: center;
+  border-radius: 50%;
+  display: block;
+  transition-timing-function: linear;
+  transition-duration: 0.3s;
+}
+
+.slider-btn .swiper-button-next::after,
+.slider-btn .swiper-button-prev::after {
+  display: none;
+}
+
+.slider-btn .swiper-button-next svg,
+.slider-btn .swiper-button-prev svg {
+  width: 1rem;
+  height: auto;
+  fill: var(--color-icon-fill-dark);
+}
+
+@media (max-width: 1024px) {
+
+  .slider-btn .swiper-button-next,
+  .slider-btn .swiper-button-prev {
+    width: 2.8rem;
+    height: 2.8rem;
+    line-height: 2.5rem;
+  }
+
+  .slider-btn .swiper-button-next svg,
+  .slider-btn .swiper-button-prev svg {
+    width: 1rem;
+  }
+}
+
+/* Button 11 btn-link*/
+.btn-link a {
+  display: flex;
+}
+
+/* الأزرار الكبيرة */
+.btn-lg {
+  padding: 15px 40px;
+  font-size: 18px;
+}
+
+
+
+/* استجابة الموبايل */
+@media (max-width: 768px) {
+  .btn-lg {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+
+
+/* Data Loading btn */
+#load-more-works,
+#load-more-blog,
+#load-more-cases {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 12px 24px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+
+
+/* Icon specific adjustments */
+#load-more-works i,
+.btn-6 i {
+  margin: 0 !important;
+  line-height: 1;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+}
+
+/* Hover effect with proper alignment */
+#load-more-works:hover,
+.btn-6:hover {
+  transform: translateY(-2px);
+}
+
+/* RTL Support (since you have Arabic text) */
+[dir="rtl"] #load-more-works,
+[dir="rtl"] .btn-6 {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] #load-more-works i {
+  margin-left: 0 !important;
+  margin-right: 0.5rem !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+
+  #load-more-works,
+  .btn-6 {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    gap: 0.4rem;
+  }
+}
+
+
+
+/* CTA Button */
+.pricing-card__cta {
+  margin-top: 2.5rem;
+  display: flex;
+}
+
+
+
+.cta-buttons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.cta-buttons a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0.5rem;
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  flex-direction: row;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .cta-buttons .btn-3,
+  .cta-buttons .btn-2 {
+    width: 100%;
+    justify-content: center;
+  }
+}

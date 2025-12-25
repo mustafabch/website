@@ -1,0 +1,454 @@
+.project-details-inner {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-top: 3rem;
+}
+
+@media (max-width: 991px) {
+  .project-details-inner {
+    display: block;
+  }
+}
+
+.project-details-inner .project-details-inner-img {
+  overflow: hidden;
+  width: 30%;
+}
+
+@media (max-width: 991px) {
+  .project-details-inner .project-details-inner-img {
+    width: 100%;
+  }
+}
+
+.project-details-inner .project-details-inner-result {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem;
+  color: var(--color-text-primary);
+}
+
+@media (max-width: 991px) {
+  .project-details-inner .project-details-inner-result {
+    margin-top: 1rem;
+  }
+}
+
+.project-details-inner h5 {
+  color: var(--color-text-primary);
+
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem;
+}
+
+.project-details-inner ul {
+  margin-top: 2rem;
+}
+
+.project-details-inner ul li {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.project-details-inner ul li:last-child {
+  margin-bottom: 0;
+}
+
+.project-details-inner ul li span {
+  color: var(--color-text-primary);
+
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75rem;
+}
+
+/* --- Project Details Styling --- */
+
+/* 1. Hero & Tags */
+.category-tag {
+  display: inline-block;
+  background: rgba(210, 210, 180, 0.05);
+  color: var(--color-text-primary);
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  border: 1px solid rgba(210, 210, 180, 0.2);
+}
+
+.project-cover-img {
+  margin: 1rem 0 2rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 2. Sidebar Info (Sticky) */
+.project-info-sidebar {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 30px;
+}
+
+/* لجعل القائمة تثبت أثناء النزول */
+.sticky-sidebar {
+  position: sticky;
+  top: 120px;
+  /* المسافة من أعلى الشاشة */
+}
+
+.project-meta-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-meta-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-meta-list li:last-child {
+  border-bottom: none;
+}
+
+.meta-label {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+}
+
+.meta-value {
+  color: var(--color-text-primary);
+  font-weight: 600;
+  text-align: left;
+  max-width: 60%;
+}
+
+/* --- تصحيح أزرار المشاركة لتكون أفقية --- */
+
+.share-project {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 15px 25px;
+  /* زيادة الحواف قليلاً */
+  border-radius: 50px;
+  margin-top: 30px;
+  justify-content: space-between;
+  /* يباعد بين كلمة مشاركة والأيقونات */
+}
+
+/* هذا الكلاس هو المسؤول عن ترتيب الأيقونات في سطر واحد */
+.share-project .social-links {
+  display: flex;
+  /* ضروري جداً للترتيب الأفقي */
+  align-items: center;
+  gap: 15px;
+  /* مسافة ثابتة بين كل أيقونة وأخرى */
+}
+
+.share-project .social-links a {
+  color: var(--color-text-primary);
+  font-size: 20px;
+  /* حجم الأيقونة */
+  transition: all 0.3s ease;
+  display: flex;
+  /* لضمان توسيط الأيقونة داخل مساحتها */
+}
+
+.share-project .social-links a:hover {
+  color: var(--color-accent-red);
+  transform: translateY(-3px);
+  /* حركة بسيطة للأعلى عند الهوفر */
+}
+
+/* 4. Story Images */
+.hover-scale {
+  transition: transform 0.5s ease;
+  cursor: zoom-in;
+}
+
+.hover-scale:hover {
+  transform: scale(1.02);
+}
+
+
+/* 5. Navigation Bottom */
+.project-navigation-area .nav-project {
+  display: block;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.nav-project:hover {
+  opacity: 0.8;
+}
+
+.nav-project .label {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 5px;
+  display: block;
+}
+
+.nav-project .title {
+  font-size: 18px;
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.all-projects-icon {
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: var(--color-text-primary);
+  transition: all 0.3s;
+}
+
+.all-projects-icon:hover {
+  background: var(--color-accent-red);
+  border-color: var(--color-accent-red);
+  transform: rotate(90deg);
+}
+
+
+/* --- 1. General & Spacing Fixes --- */
+.portfolio-hero-area {
+  padding-top: 8.75rem;
+  /* مسافة كافية للهيدر */
+  padding-bottom: 5rem;
+  background-color: var(--color-bg-primary);
+}
+
+.portfolio-hero-area .bg-shape {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.portfolio-grid-area {
+  padding-bottom: 16rem;
+  /* مسافة سفلية للشبكة */
+}
+
+/* --- 2. Filter Navigation --- */
+.portfolio-filter-nav {
+  margin-bottom: 3.5rem;
+}
+
+.project-grid-btn li.filter-btn {
+  display: inline-block;
+  margin: 5px;
+  padding: 0.5rem 1.5rem;
+  background: transparent;
+  border: 1px solid var(--color-border-light);
+  border-radius: 2rem;
+  color: var(--color-text-primary);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.project-grid-btn li.filter-btn:hover,
+.project-grid-btn li.filter-btn.is-active {
+  background: var(--color-brand-primary);
+  border-color: var(--color-brand-primary);
+  color: var(--color-text-dark);
+  transform: translateY(-2px);
+}
+
+/* --- 3. Portfolio Cards (Hover Overlay Logic) --- */
+.portfolio-item-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  margin-bottom: 0;
+  /* Bootstrap g-4 handles spacing */
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  background: var(--color-bg-card);
+  /* Fallback color */
+}
+
+.portfolio-thumb {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  /* توحيد أبعاد الصور */
+  width: 100%;
+}
+
+.portfolio-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  display: block;
+}
+
+/* The Dark Overlay */
+.portfolio-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top,
+      rgba(26, 29, 35, 0.95),
+      rgba(26, 29, 35, 0.7));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  /* مخفي افتراضياً */
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
+  padding: 1rem;
+  backdrop-filter: blur(2px);
+}
+
+/* Content Animation */
+.overlay-content {
+  transform: translateY(2rem);
+  transition: transform 0.4s ease-in-out;
+  width: 100%;
+}
+
+/* Hover Actions */
+.portfolio-item-card:hover .portfolio-thumb img {
+  transform: scale(1.1);
+  /* تكبير الصورة */
+}
+
+.portfolio-item-card:hover .portfolio-overlay {
+  opacity: 1;
+  /* إظهار الطبقة */
+  visibility: visible;
+}
+
+.portfolio-item-card:hover .overlay-content {
+  transform: translateY(0);
+  /* رفع النص للأعلى */
+}
+
+/* Typography Inside Card */
+.portfolio-overlay .category {
+  display: block;
+  color: var(--color-accent-teal);
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+
+
+.portfolio-overlay .title h3 a {
+  color: var(--color-text-primary);
+  font-size: 1rem !important;
+  font-weight: 700;
+  line-height: 1.4;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+
+.portfolio-overlay .title a:hover {
+  color: var(--color-brand-primary);
+}
+
+.portfolio-overlay .details-btn {
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  border-radius: 50%;
+  background: var(--color-accent-red);
+  color: var(--color-text-dark);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+}
+
+.portfolio-overlay .details-btn:hover {
+  background: var(--color-brand-primary);
+  color: var(--color-text-primary);
+  transform: scale(1.1);
+}
+
+
+
+/* --- 5. CTA Section --- */
+.portfolio-cta {
+  background-color: var(--color-brand-secondary);
+  position: relative;
+  overflow: hidden;
+  padding: 16rem 0 16rem 0;
+  border-top: 1px solid var(--color-border-light);
+}
+
+.portfolio-cta .cta-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at center, rgba(42, 45, 52, 0) 0%, #1a1d23 100%),
+    url('/assets/images/backgrounds/bg-topo-lines.webp');
+  background-size: cover;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.portfolio-cta .cta-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.portfolio-cta .cta-desc {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 991px) {
+  .portfolio-cta .cta-title {
+    font-size: 2.125rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-cta .cta-title {
+    font-size: 28px;
+  }
+
+  .portfolio-cta .cta-desc {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+@media (max-width: 991px) {
+
+  .portfolio-hero-area .main-title {
+    font-size: 2rem;
+  }
+}

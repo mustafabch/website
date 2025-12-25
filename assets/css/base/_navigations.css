@@ -1,0 +1,139 @@
+/* === Pagination Navigation Base Styles === */
+.cs-pagination-area,
+.project-navigation-area,
+.blog-navigation-area {
+  font-family: "Readex Pro", sans-serif;
+  direction: rtl;
+  text-align: right;
+  padding: 60px 0;
+  margin: 0;
+  border-top: 1px solid var(--overlay-light-30);
+  background-color: var(--overlay-light-05);
+}
+
+/* Button links: consistent spacing and alignment */
+.cs-pagination-area a,
+.project-navigation-area a,
+.blog-navigation-area a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: opacity 0.2s ease;
+}
+
+.cs-pagination-area a:hover,
+.project-navigation-area a:hover,
+.blog-navigation-area a:hover {
+  opacity: 0.85;
+}
+
+/* Icon box styling */
+.icon-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color-brand-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #495057;
+  flex-shrink: 0;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+a:hover .icon-box {
+  background-color: var(--color-accent-teal);
+  color: var(--color-brand-light);
+}
+
+/* Text content */
+.p-span-prev,
+.p-span-next {
+  display: block;
+  font-size: 0.875rem;
+  color: #6c757d;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.p-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-top: 5px;
+  padding: 15px 0 15px 0;
+  color: var(--color-text-primary);
+  line-height: 1.3;
+  max-width: 330px;
+}
+
+
+.p-title:hover {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--color-accent-teal);
+  line-height: 1.3;
+  max-width: 330px;
+}
+
+/* Home button styling */
+.p-home {
+  background-color: none;
+  border: 1px solid var(--color-brand-light);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  color: #495057;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-wrap: nowrap;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  white-space: nowrap;
+}
+
+.p-home:hover {
+  background-color: var(--color-brand-light);
+  border-color: #ced4da;
+  color: #212529;
+}
+
+.p-home i {
+  font-size: 1.125rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+  .p-title {
+    max-width: 160px;
+    font-size: 1rem;
+  }
+
+  .p-span-prev,
+  .p-span-next {
+    margin-bottom: 15px;
+    font-size: 0.8125rem;
+  }
+
+
+  .cs-pagination-area .row,
+  .project-navigation-area .row,
+  .blog-navigation-area .row {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  a.text-end {
+    justify-content: center;
+    text-align: center;
+  }
+
+  a:not(.p-home) {
+    justify-content: center;
+  }
+}

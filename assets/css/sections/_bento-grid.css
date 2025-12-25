@@ -1,0 +1,143 @@
+/* --- Smart Bento Services (Background Style) --- */
+.smart-services-title p {
+  padding: 1rem;
+}
+
+.smart-grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+/* تنسيق الكرت الأساسي */
+.smart-card {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 35px;
+  position: relative;
+  /* ضروري لتموضع الخلفية */
+  overflow: hidden;
+  /* لقص الصورة الزائدة */
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* لتوسيط النص عمودياً إذا كان قصيراً */
+}
+
+/* تأثير الهوفر على الكرت */
+.smart-card:hover {
+  border-color: var(--color-accent-red);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.04) 100%);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* --- التحكم في النصوص --- */
+.card-content-overlay {
+  position: relative;
+  z-index: 2;
+  /* لضمان ظهور النص فوق الصورة */
+}
+
+/* --- تنسيق الصورة الخلفية (Watermark) --- */
+.card-bg-visual {
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  /* نضعها في الزاوية اليسرى السفلية (للمواقع العربية) */
+  width: 180px;
+  /* حجم كبير */
+  height: 180px;
+  opacity: 0.08;
+  /* شفافية عالية جداً (تظهر كخيال) */
+  z-index: 1;
+  transition: all 0.5s ease;
+  pointer-events: none;
+  /* لمنع تفاعل الماوس مع الصورة */
+}
+
+.bg-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: rotate(15deg);
+  /* تدوير بسيط لجمالية أكثر */
+  transition: transform 0.5s ease;
+}
+
+/* حركة الصورة عند الهوفر */
+.smart-card:hover .card-bg-visual {
+  opacity: 0.15;
+  /* تصبح أوضح قليلاً */
+  bottom: -10px;
+  /* تتحرك للأعلى قليلاً */
+  left: -10px;
+}
+
+.smart-card:hover .bg-icon {
+  transform: rotate(0deg) scale(1.1);
+  /* تعود لوضعها الطبيعي وتكبر */
+}
+
+
+/* --- أحجام الشبكة (Grid Layout) --- */
+
+/* الكرت الكبير */
+.large-card {
+  grid-column: span 3;
+  /* يأخذ نصف الشاشة في وضع 6 أعمدة، أو كاملها هنا وسنعدلها بالميديا كويري */
+  min-height: 280px;
+}
+
+/* الكرت المتوسط */
+.medium-card {
+  grid-column: span 1;
+  min-height: 240px;
+}
+
+/* --- التجاوب (Media Queries) --- */
+
+@media (min-width: 992px) {
+  .smart-grid-wrapper {
+    grid-template-columns: repeat(6, 1fr);
+    /* نستخدم 6 أعمدة للتحكم الدقيق */
+  }
+
+  /* الصف الأول: كرتين كبار */
+  .large-card {
+    grid-column: span 3;
+    /* كل واحد يأخذ 50% */
+  }
+
+  /* الصف الثاني: 3 كروت متوسطة */
+  .medium-card {
+    grid-column: span 2;
+    /* كل واحد يأخذ 33% */
+  }
+}
+
+@media (max-width: 991px) {
+  .smart-grid-wrapper {
+    grid-template-columns: 1fr;
+    /* عمود واحد */
+  }
+
+  .large-card,
+  .medium-card {
+    grid-column: span 1;
+    /* عرض كامل */
+    min-height: auto;
+    /* ارتفاع حسب المحتوى */
+  }
+
+  .card-bg-visual {
+    width: 120px;
+    /* تصغير الصورة في الجوال */
+    height: 120px;
+    opacity: 0.05;
+  }
+}
